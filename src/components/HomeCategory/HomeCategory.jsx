@@ -4,9 +4,8 @@ import door from "../../assets/door.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
-import { Navigation } from "swiper/modules";
+import { Navigation ,Autoplay } from "swiper/modules";
 import { FaStar ,FaRegStar } from "react-icons/fa";
-import { BsArrowLeft } from "react-icons/bs";
 const HomeCategory = () => {
   const array = [
     {
@@ -52,6 +51,7 @@ const HomeCategory = () => {
       star: 5,
     },
   ];
+  console.log();
   return (
     <div className="homeCategory">
       <h1>Bizning Mahsulot</h1>
@@ -62,11 +62,15 @@ const HomeCategory = () => {
         <button>Zinapoya</button>
       </div>
       <Swiper
-        slidesPerView={4}
-        spaceBetween={30}
+        slidesPerView={window.innerWidth > 1000 ? 4 : 2}
+        spaceBetween={50}
         loop={true}
         navigation={true}
-        modules={[Navigation]}
+        autoplay={{
+          delay: 5000,
+          disableOnInteraction: false,
+        }}
+        modules={[ Autoplay ,Navigation]}
         className="homeCategorySwipers"
       >
         {array.map((item) => (
