@@ -33,7 +33,7 @@ const Navbar = () => {
             </div>
             <div className="languages">
               <div className="language">
-                <img src="./images/logo.png" alt="language" />
+                <img src="./images/flag.png" alt="language" />
                 <span>Uzb</span>
                 <FaAngleDown className="languageIcon"/>
               </div>
