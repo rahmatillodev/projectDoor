@@ -1,16 +1,18 @@
 @import url(https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800;900&display=swap);
-
+:root {
+  --color: #b62d25;
+}
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   box-sizing: border-box;
   outline: none;
   list-style: none;
 }
 .btn {
-  padding: 10px 20px;
-  background: #B62D25;
+  padding: 15px 20px;
+  background: var(--color);
   color: white;
   border: none;
   outline: none;
@@ -18,4 +20,7 @@
 }
 svg {
   cursor: pointer;
+}
+a {
+  text-decoration: none;
 }

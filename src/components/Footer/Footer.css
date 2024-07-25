@@ -1,0 +1,38 @@
+footer {
+    background: #f7f7f7;
+}
+.footer {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    height: 70%;
+    width: 80%;
+    margin: 0px auto;
+    padding-top: 100px;
+    gap: 50px;
+}
+.footer div {
+
+}
+.footer div a {
+    display: block;
+    padding-bottom: 20px;
+    color: black;
+}
+.footer div a svg{
+    font-size: 20px;
+    margin-right: 1rem;
+}
+.footer div > a:nth-child(1) {
+    color: #F6973F;
+}
+.footerBottom {
+    display: flex;
+    width: 80%;
+    margin: 0px auto;
+    justify-content: space-between;
+    padding: 70px 0px;
+}
+.footerBottom .footerBottomRight {
+    display: flex;
+    gap: 50px;
+}
