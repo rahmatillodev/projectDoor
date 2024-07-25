@@ -1,16 +1,18 @@
 .nav {
   display: flex;
-  width: 90%;
+  width: 95%;
   margin: 0px auto;
   justify-content: space-between;
   align-items: center;
 }
 nav {
   background: white;
+  display: flex;
+  justify-content: center;
 }
 
 nav .nav > img {
-  width: 130px;
+  width: 5%;
   height: 100px;
   object-fit: contain;
 }
@@ -22,13 +24,14 @@ nav .nav > img {
   height: 50px;
   justify-content: space-between;
   align-items: center;
+  font-size: 15px;
 }
 .nav .navbar .navbarTop {
   border-bottom: 2px solid rgba(0, 0, 0, 0.2);
 }
 .nav .navbar .navbarTop p {
   display: flex;
-  gap: 10px;
+  gap: 5px;
 }
 .nav .navbar .navbarTop p .navTelegramIcon {
   color: dodgerblue;
@@ -37,12 +40,13 @@ nav .nav > img {
 
 .navbarTop .navbarTopRight {
   display: flex;
-  gap: 20px;
+  gap: 15px;
   align-items: center;
 }
 .navbarTop .navbarTopRight h3 {
   display: flex;
-  gap: 10px;
+  gap: 2px;
+  align-items: center;
   font-weight: 500;
 }
 .nav .navbarBottom a {
@@ -92,7 +96,7 @@ nav .nav > img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 80px;
+  height: 70px;
 }
 
 .nav .navbarBottom img {

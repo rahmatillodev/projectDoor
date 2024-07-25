@@ -1,5 +1,5 @@
 header {
-  height: calc(100vh - 130px);
+  height: calc(100vh - 100px);
   width: 100%;
   background: center/cover url("../../assets/bg.jpg");
 }
@@ -60,7 +60,7 @@ header {
     display: flex;
     flex-direction: column;
     text-align: center;
-    gap: 20px;
+    gap: 15px;
     border-radius: 20px;
 }
 .headerRight .headerRightForm h1{

@@ -11,13 +11,13 @@ const Navbar = () => {
         <img src={logo} alt="logo" />
         <div className="navbar">
           <div className="navbarTop">
-            <p>Lorem ipsum dolor sit amet consectetur.</p>
+            <p>Buyurtma asosida eshiklar ishlab chiqaruvchi kompayniya</p>
             <p>
               <FaTelegram className="navTelegramIcon" />
-              Lorem, ipsum dolor.
+              Bizga telegramda yozing
             </p>
             <div className="navbarTopRight">
-              <p>Lorem ipsum dolor sit amet.</p>
+              <p>Biz hozir ishlayabmiz, qo’ng’iroq qiling:</p>
               <h3>
                 <LuPhone /> +998987654321
               </h3>

@@ -34,7 +34,8 @@ const Header = () => {
         <div className="headerRight">
           <div className="headerRightForm">
             <h1>O'lchovini bepul chiqarish uchun</h1>
-            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Buyurtma uchun quyidagi 
+            formani to’ldiring</p>
             <input type="text" className="headerRightName" placeholder="Ismingiz" />
             <input type="text" className="headerRightNumber" placeholder="+998" />
             <button className="btn">Jo'natish</button>
