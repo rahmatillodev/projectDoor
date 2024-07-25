@@ -1,92 +1,127 @@
 .homeCategory {
-    text-align: center;
-    padding-top: 30px;
-    background: #f7f7f7f7;
+  text-align: center;
+  padding-top: 30px;
+  background: #f7f7f7f7;
 }
 .homeCategoryButtons {
-    display: flex;
-    width: max-content;
-    margin: 30px auto;
-    gap: 40px;
-    background: #eee;
-    padding: 10px;
-    border-radius: 30px;
+  display: flex;
+  width: max-content;
+  margin: 30px auto;
+  gap: 40px;
+  background: #eee;
+  padding: 10px;
+  border-radius: 30px;
 }
 .homeCategoryButtons button {
-    border: none;
-    background: white;
-    padding: 10px;
-    border-radius: 20px;
+  border: none;
+  padding: 10px;
+  border-radius: 20px;
+  transition: 0.3s;
 }
-
-
-
+.homeCategoryButtons button:focus {
+  background: white;
+}
 
 .homeCategorySwipers {
-    width: 85%;
-    margin: 0px auto;
-    text-align: center;
-    padding-top: 60px !important;
-
+  width: 85%;
+  margin: 0px auto;
+  text-align: center;
+  padding-top: 60px !important;
 }
-
 
 .homeCategorySwiper .homeCategorySwiperImage {
-    border-radius: 20px 20px 0px 0px;
-    box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.1);
-    height: 250px;
+  border-radius: 20px 20px 0px 0px;
+  box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.1);
+  height: 250px;
 }
 .homeCategorySwiperImage img {
-    height: 300px;
-    transform: translateY(-50px);
-    padding-bottom: 15px;
+  height: 300px;
+  transform: translateY(-50px);
+  padding-bottom: 15px;
 }
 .homeCategorySwiperText {
-    background: white;
-    text-align: start;
-    padding: 20px;
-    border-radius: 0px 0px 20px 20px;
+  background: white;
+  text-align: start;
+  padding: 20px;
+  border-radius: 0px 0px 20px 20px;
 }
 .homeCategorySwiperText p {
-    color: #8D8D8D;
+  color: #8d8d8d;
 }
 .homeCategorySwiperText h2 {
-    color: #1E1E1E;
-    padding: 10px 0px;
+  color: #1e1e1e;
+  padding: 10px 0px;
 }
 .homeCategorySwiperStar {
-    display: flex;
-    gap: 10px;
+  display: flex;
+  gap: 10px;
 }
 .homeCategorySwiperText .homeCategorySwiperStar svg {
-    color: #F6B76F;
-    font-size: 20px;
+  color: #f6b76f;
+  font-size: 20px;
 }
 .homeCategorySwiperText button {
-    margin-top: 20px;
-    width: 100%;
-    border: none;
-    background:#F7F7F7;
-    padding: 15px 0px;
-    box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.1);
-    border-radius: 12px;
-    cursor: pointer;
+  margin-top: 20px;
+  width: 100%;
+  border: none;
+  padding: 15px 0px;
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  background: #f7f7f7;
+  cursor: pointer;
 }
+
 .homeCategorySwipers .swiper-button-prev,
 .homeCategorySwipers .swiper-button-next {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background: white;
-    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
-    color: black;
-    transition: 0.1s;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: white;
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+  color: black;
+  transition: 0.1s;
 }
 .homeCategorySwipers .swiper-button-prev::after,
 .homeCategorySwipers .swiper-button-next::after {
-    font-size: 20px ;
+  font-size: 20px;
 }
 .homeCategorySwipers .swiper-button-prev:active,
 .homeCategorySwipers .swiper-button-next:active {
-    transform: scale(0.9);
+  transform: scale(0.9);
+}
+
+.homeCategory .homeLinks {
+  padding-top: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.homeCategory .homeLinks .homeLink {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.homeCategory .homeLinks a{
+  display: block;
+  color: var(--color);
+}
+.homeCategory .homeLinks img{
+  cursor: pointer;
+  height: 30px;
+}
+
+
+@media screen and (max-width: 1000px) {
+  .homeCategorySwipers .swiper-button-prev,
+  .homeCategorySwipers .swiper-button-next {
+    display: none !important;
+  }
+}
+@media screen and (max-width:500px) {
+  .homeCategoryButtons {
+    gap: 15px;
+  }
+  .homeCategoryButtons button {
+    font-size: 13px;
+  }
 }
