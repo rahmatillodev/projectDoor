@@ -20,15 +20,15 @@ const Header = () => {
           </div>
           <p className="headerLeftText">
             <img src={icon1} className="headerLeftIcon" alt="icon1" />
-            <span>Lorem ipsum dolor sit.</span>
+            <span>To’g’ridanto’g’ri ishlab chiqaruvchidan</span>
           </p>
           <p className="headerLeftText">
           <img src={icon2} className="headerLeftIcon" alt="icon2" />
-          <span>Lorem ipsum dolor sit.</span>
+          <span>1 yil bepul serviz ko’rsatamiz</span>
           </p>
           <p className="headerLeftText">
           <img src={icon3} className="headerLeftIcon" alt="icon3" />
-          <span>Lorem ipsum dolor sit.</span>
+          <span>Sifatga 5 yillik kafolat beramiz</span>
           </p>
         </div>
         <div className="headerRight">

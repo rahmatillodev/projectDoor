@@ -1,0 +1,39 @@
+.about {
+  display: flex;
+  background: black;
+  color: white;
+  height: 200px;
+  align-items: center;
+}
+.about .aboutText {
+  width: 25%;
+  height: 100px;
+  text-align: center;
+  border-right: 1px solid white;
+}
+.about .aboutText:last-child {
+  border-right: none;
+}
+.about .aboutText h1 {
+  color: var(--color);
+  font-weight: 600;
+}
+@media screen and (max-width:1020px) {
+    .about {
+        display: grid;
+        grid-template-columns: repeat(2 ,1fr);
+        padding: 50px 0px;
+        height: auto;
+        gap: 50px;
+    }
+    .about .aboutText {
+        width: 100%;
+        border: none;
+    }
+}
+@media screen and (max-width:678px) {
+    .about {
+        grid-template-columns: repeat(1 ,1fr);
+        gap: 10px;
+    }
+}
