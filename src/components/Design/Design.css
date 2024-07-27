@@ -1,0 +1,107 @@
+.design {
+  padding-top: 100px;
+  width: 90%;
+  margin: 0px auto;
+}
+.design .designImage {
+  background: center/cover url("../../assets/designBg.png");
+  width: 90%;
+  color: white;
+  margin: 60px auto;
+  position: relative;
+  border-radius: 20px;
+  height: 600px;
+  display: flex;
+  box-shadow: 0px 0px 30px 2px rgba(0, 0, 0, 0.2);
+  flex-direction: column;
+}
+.design h1 {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 49px;
+}
+.design span {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24.26px;
+  color: var(--color);
+}
+.designImage .designCard {
+  width: 400px;
+  height: 200px;
+  background: white;
+  box-shadow: 0px 0px 30px 2px rgba(0, 0, 0, 0.1);
+  color: black;
+  border-radius: 14px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.designImage .designCard .number {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color);
+  background: #f7515c0d;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 23px;
+}
+.designImage .designCard div {
+  width: 70%;
+}
+.designImage .designCard div h2 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+}
+.designImage .designCard div p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+}
+.designImage .designCard2 {
+  align-self: flex-end;
+  transform: translate(-30px, -50px);
+}
+.designImage .designCard1 {
+  transform: translate(-70px, -70px);
+}
+.designImage .designCard3 {
+  align-self: flex-end;
+  transform: translate(70px, 70px);
+}
+.design .dots {
+    z-index: -1;
+    position: relative;
+    transform: translate(200px,-100px);
+}
+
+
+@media screen and (max-width: 950px) {
+  .design .designImage {
+    justify-content: space-around;
+  }
+  .designImage .designCard {
+    transform: translate(0px) !important;
+    align-self: center;
+    height: 150px;
+  }
+  .designImage .designCard1 {
+    order: 1;
+  }
+  .designImage .designCard2 {
+    order: 2;
+  }
+  .designImage .designCard3 {
+    order: 3;
+  }
+.design .dots {
+    width: 70%;
+    left: 15%;
+    transform: translateY( -100px);
+}
+}

@@ -1,6 +1,8 @@
 import "./Service.css"
 import img from "../../assets/service.png"
 import xIcon from "../../assets/x-octagon.svg"
+import form from "../../assets/form.png"
+import success from "../../assets/success.svg"
 const Service = () => {
   return (
     <div className="service">
@@ -23,7 +25,20 @@ const Service = () => {
                 </ul>
             </div>
         </div>
-        <div className="serviceBottom"></div>
+        <div className="serviceBottom">
+            <h2>Bizning eshiklar bilan yuqoridagi muammolarga duch kelsangiz,
+            ma’muriyat <span>harajat</span> va <span>majburiyatlarni</span> o’z zimmasiga oladi</h2>
+            <div className="serviceBottomImages">
+                <img className="fromImage" src={form} alt="form" />
+                <div className="serviceBottomCard">
+                    <p>5 yil sifatiga kafolat beramiz</p>
+                    <p>1 yil bepul servis ko’rsatamiz</p>
+                    <button>Buyurtma berish</button>
+                    <p></p>
+                </div>
+                <img src={success} className="successImage" alt="success" />
+            </div>
+        </div>
     </div>
   )
 }

@@ -42,3 +42,14 @@ a {
 .swiper .swiper-button-next:active {
   transform: scale(0.9);
 }
+
+img::selection {
+  background: transparent;
+}
+
+@media screen and (max-width: 1000px) {
+  .swiper .swiper-button-prev,
+  .swiper .swiper-button-next {
+    display: none !important;
+  }
+}

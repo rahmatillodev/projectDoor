@@ -72,13 +72,13 @@ const Testimonial = () => {
         }}
         className="testimonialCards"
       >
-        {array.map((element) => (
-          <SwiperSlide
+        {array.map((element,index) => (
+          <SwiperSlide key={index}
             className="testimonialCard"
             style={{ background: `center/cover url(${element.bgImg})` }}
           >
             <div className="testimonialCardText">
-              <div class="testimonialCardImage">
+              <div className="testimonialCardImage">
                 <img src={element.img} alt="Profile Picture" />
               </div>
               <h3>{element.title}</h3>
