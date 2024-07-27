@@ -1,0 +1,81 @@
+.delivery {
+  padding: 100px 0px;
+  text-align: center;
+  width: 90%;
+  margin:0px auto;
+}
+.deliveryWrapper {
+  display: flex;
+  text-align: start;
+  margin: 50px 0px;
+  justify-content: space-between;
+}
+.deliveryWrapper > div {
+  width: 45%;
+}
+.deliveryImg img {
+  object-fit: contain;
+  width: 100%;
+}
+.delivery h1 {
+  font-size: 56px;
+  font-weight: 600;
+  line-height: 45px;
+  letter-spacing: 0.04em;
+}
+.deliveryText h2 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 32px;
+}
+.deliveryText li {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+}
+.delivery li .deliveryIcon {
+  padding: 10px;
+}
+
+.delivery h4 {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 38px;
+  padding: 30px 0px;
+}
+
+.delivery h5 {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+
+@media screen and (max-width:1024px) {
+    .deliveryWrapper {
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+    .deliveryWrapper > div {
+        width: 90%;
+        margin: 0px auto;
+    }
+    .deliveryWrapper ul {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .deliveryWrapper .deliveryText li {
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:678px) {
+    .delivery h1 {
+        font-size: 37px;
+    }
+    .deliveryWrapper ul {
+        grid-template-columns: 1fr;
+    }
+}
