@@ -20,7 +20,7 @@ const Header = () => {
           </div>
           <p className="headerLeftText">
             <img src={icon1} className="headerLeftIcon" alt="icon1" />
-            <span>To’g’ridanto’g’ri ishlab chiqaruvchidan</span>
+            <span>To’g’ridan to’g’ri ishlab chiqaruvchidan</span>
           </p>
           <p className="headerLeftText">
           <img src={icon2} className="headerLeftIcon" alt="icon2" />

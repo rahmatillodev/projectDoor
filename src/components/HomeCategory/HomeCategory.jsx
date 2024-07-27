@@ -1,7 +1,7 @@
 import "./HomeCategory.css";
 import door from "../../assets/door.png";
-import linkRight from "../../assets/linkRight.svg"
-import { FaArrowRightLong } from "react-icons/fa6"
+import linkRight from "../../assets/linkRight.svg";
+import { FaArrowRightLong } from "react-icons/fa6";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -53,21 +53,6 @@ const HomeCategory = () => {
       star: 5,
     },
   ];
-  const [resizeWidth, setresizeWidth] = useState(4);
-
-  function width() {
-    window.innerWidth > 1260
-      ? setresizeWidth(4)
-      : window.innerWidth > 935
-      ? setresizeWidth(3)
-      : window.innerWidth > 600
-      ? setresizeWidth(2)
-      : setresizeWidth(1);
-  }
-  window.addEventListener("resize", width);
-  useEffect(() => {
-    width();
-  }, []);
 
   return (
     <div className="homeCategory">
@@ -79,10 +64,20 @@ const HomeCategory = () => {
         <button>Zinapoya</button>
       </div>
       <Swiper
-        slidesPerView={resizeWidth}
-        spaceBetween={50}
+        spaceBetween={30}
         loop={true}
         navigation={true}
+        breakpoints={{
+          500: {
+            slidesPerView: 1,
+          },
+          800: {
+            slidesPerView: 2,
+          },
+          1050: {
+            slidesPerView: 3,
+          },
+        }}
         autoplay={{
           delay: 5000,
           disableOnInteraction: false,
@@ -111,7 +106,9 @@ const HomeCategory = () => {
         ))}
       </Swiper>
       <div className="homeLinks">
-        <p className="homeLink"><a href="#" >To’liq ko’rish</a> <img src={linkRight} alt="linkRight" /></p>
+        <p className="homeLink">
+          <a href="#">To’liq ko’rish</a> <img src={linkRight} alt="linkRight" />
+        </p>
       </div>
     </div>
   );

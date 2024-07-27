@@ -1,0 +1,59 @@
+.service {
+  padding: 100px 0px;
+}
+.serviceTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.serviceTopImage {
+  width: 45%;
+}
+.serviceTopImage img {
+  width: 100%;
+  box-shadow: -10px 10px 30px 2px grey;
+  border-radius: 30px;
+}
+.serviceTop .serviceTopText {
+  text-align: center;
+  width: 50%;
+}
+.serviceTop .serviceTopText h2 {
+  font-size: 35px;
+  font-weight: 500;
+  line-height: 43px;
+}
+.serviceTop .serviceTopText h2 span {
+  color: var(--color);
+}
+.serviceTop .serviceTopText ul {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    margin-top: 50px;
+    text-align: start;
+}
+
+.serviceTop .serviceTopText ul img {
+    width: 24px;
+    height: 24px;
+}
+.serviceTop .serviceTopText ul li {
+  font-size: 14px;
+  display: flex;
+  align-items:center;
+  gap: 10px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+@media screen and (max-width:920px){
+    .service .serviceTop {
+        flex-direction: column;
+        gap: 50px;
+    }
+    .service .serviceTop > div {
+        width: 90%;
+        margin:  0px auto;
+    }
+}

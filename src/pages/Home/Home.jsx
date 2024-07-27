@@ -4,6 +4,8 @@ import Footer from '../../components/Footer/Footer'
 import About from '../../components/About/About'
 import HomeCategory from '../../components/HomeCategory/HomeCategory'
 import Examples from '../../components/Examples/Examples'
+import Testimonial from '../../components/Testimonial/Testimonial'
+import Service from '../../components/Service/Service'
 const Home = () => {
   return (
     <div>
@@ -12,6 +14,8 @@ const Home = () => {
         <About/>
         <HomeCategory/>
         <Examples/>
+        <Testimonial/>
+        <Service/>
         <Footer/>
     </div>
   )
