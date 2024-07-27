@@ -71,7 +71,7 @@ const HomeCategory = () => {
           500: {
             slidesPerView: 1,
           },
-          800: {
+          750: {
             slidesPerView: 2,
           },
           1050: {

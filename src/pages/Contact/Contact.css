@@ -73,6 +73,22 @@
     .contactWrapper > div {
         width: 90%;
     }
+    .contactWrapper .contactLeftText {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .contactLeftText > div {
+        width: 90%;
+    }
+    .contactLeftText > div > div {
+        display: flex;
+        align-items: start;
+        gap: 10px;
+        padding-top: 30px;
+    }
+    .contactLeftText > div > div p{
+        padding-top: 0px;
+    }
     .contactWrapper .contactRight iframe {
         height: 250px;
     }

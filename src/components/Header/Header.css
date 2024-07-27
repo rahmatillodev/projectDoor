@@ -12,10 +12,6 @@ header {
   align-items: center;
   height: 100%;
 }
-
-.headerLeft .headerLeftTitle {
-  /* width: 70%; */
-}
 .headerLeftTitle h1 {
   font-size: 3rem;
   text-transform: uppercase;
@@ -92,9 +88,18 @@ header {
   .header .headerRightForm {
     width: 100%;
   }
+  .headerLeft  {
+    width: 90%;
+  } 
 }
-@media screen and (max-width:687px) {
+@media screen and (max-width:700px) {
   .header .headerRight {
-    width: 80%;
+    width: 90%;
+  }
+  .headerLeft {
+    width: 100%;
+  }
+  .headerLeft .headerLeftText {
+    justify-content: start !important;
   }
 }

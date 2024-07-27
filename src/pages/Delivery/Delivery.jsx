@@ -1,8 +1,11 @@
-import React from 'react'
+import "./Delivery.css"
 
 const Delivery = () => {
   return (
-    <div>Delivery</div>
+    <div className="delivery">
+      <h1>Yetkazib berish va o’rnatish</h1>
+      
+    </div>
   )
 }
 

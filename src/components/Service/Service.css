@@ -65,6 +65,7 @@
   position: absolute;
   width: 120px;
   height: 500px;
+  z-index: -1;
 }
 .serviceBottom::after {
   left: 0px;
@@ -153,4 +154,9 @@
     align-self: center;
     transform: translate(0px);
   }
+}
+@media screen and (max-width: 600px) {
+.serviceTop .serviceTopText ul {
+  grid-template-columns: 1fr;
+}
 }

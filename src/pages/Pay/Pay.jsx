@@ -1,8 +1,16 @@
-import React from 'react'
+import "./Pay.css"
 
 const Pay = () => {
+  
   return (
-    <div>Pay</div>
+    <div className='pay'>
+      <h1>To'lov</h1>
+      <div className="payCards">
+        <div className="payCard"></div>
+        <div className="payCard"></div>
+        <div className="payCard"></div>
+      </div>
+    </div>
   )
 }
 

@@ -11,21 +11,31 @@ const Contact = () => {
           </h2>
           <div className="contactLeftText">
             <div>
-              <p>Ish vaqti</p>
-              <h3>Dushanbadan-shanbagacha 09:00 dan 18:00 gacha</h3>
-              <p>Telefon:</p>
-              <h3>+998 71 230-12-91</h3>
-              <p>E-mail:</p>
-              <h3>f9group@gmail.uz</h3>
+              <div>
+                <p>Ish vaqti:</p>
+                <h3>Dushanbadan-shanbagacha 09:00 dan 18:00 gacha</h3>
+              </div>
+              <div>
+                <p>Telefon:</p>
+                <h3>+998 71 230-12-91</h3>
+              </div>
+              <div>
+                <p>E-mail:</p>
+                <h3>f9group@gmail.uz</h3>
+              </div>
             </div>
             <div>
-              <p>Transport:</p>
-              <h3>131-avtobus, 13-yo`nalishli taksi.</h3>
+              <div>
+                <p>Transport:</p>
+                <h3>131-avtobus, 13-yo`nalishli taksi.</h3>
+              </div>
+              <div>
               <p>Manzil:</p>
               <h3>
                 Toshkent shahri, Kichik Xalqa Yo`li ko`chasi, G-9a mavzesi, 21-a
                 uy.
               </h3>
+              </div>
             </div>
           </div>
         </div>
