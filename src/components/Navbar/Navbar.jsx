@@ -4,11 +4,14 @@ import { FaAngleDown, FaTelegram } from "react-icons/fa6";
 import { LuPhone } from "react-icons/lu";
 import flag from "../../assets/flag.png";
 import logo from "../../assets/logo.png";
+import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <nav>
       <div className="nav">
-        <img src={logo} alt="logo" />
+        <Link to="/">
+          <img src={logo} alt="logo" />
+        </Link>
         <div className="navbar">
           <div className="navbarTop">
             <p>Buyurtma asosida eshiklar ishlab chiqaruvchi kompayniya</p>
@@ -25,21 +28,21 @@ const Navbar = () => {
           </div>
           <div className="navbarBottom">
             <div className="navbarBottomLinks">
-              <a href="#">Bosh sahifa</a>
+              <Link to="/">Bosh sahifa</Link>
               <div className="navbarDropDown">
-                <a href="#">
+                <Link to="katalog">
                   Katalog <FaAngleDown />
-                </a>
+                </Link>
                 <div className="dropdownElements">
-                  <a href="#">Katalog 1</a>
-                  <a href="#">Katalog 2</a>
-                  <a href="#">Katalog 3</a>
-                  <a href="#">Katalog 4</a>
+                  <Link to="katalog">Katalog 1</Link>
+                  <Link to="katalog">Katalog 2</Link>
+                  <Link to="katalog">Katalog 3</Link>
+                  <Link to="katalog">Katalog 4</Link>
                 </div>
               </div>
-              <a href="#">Yetkazib berish va o'rnatish</a>
-              <a href="#">To'lov</a>
-              <a href="#">Biz bilan bog'lanish</a>
+              <Link to="delivery">Yetkazib berish va o'rnatish</Link>
+              <Link to="pay">To'lov</Link>
+              <Link to="contact">Biz bilan bog'lanish</Link>
             </div>
             <div className="languages">
               <div className="language">

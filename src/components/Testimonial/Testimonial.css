@@ -21,6 +21,7 @@
   margin: 0px auto;
 }
 .testimonialCards .testimonialCard {
+  cursor: grab;
   border-radius: 20px;
 }
 .testimonial .swiper-slide {
