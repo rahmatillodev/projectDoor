@@ -5,7 +5,7 @@ import LanguageDetector from 'i18next-browser-languagedetector';
 
 i18n
   .use(Backend) // JSON fayllarni yuklash uchun
-  .use(LanguageDetector) // Brauzer tilini aniqlash uchun
+  // .use(LanguageDetector) // Brauzer tilini aniqlash uchun
   .use(initReactI18next) // React uchun i18next
   .init({
     fallbackLng: 'kz',

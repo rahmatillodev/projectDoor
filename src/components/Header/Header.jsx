@@ -11,32 +11,32 @@ const Header = () => {
         <div className="headerLeft">
           <div className="headerLeftTitle">
             <h1>
-            {t('header.headerLeftText1')}
+            {t('header.quality')}
               <p>
-                <span> {t('header.headerLeftText2')}</span> {t('header.headerLeftText3')}
+                <span> {t('header.mdf')}</span> {t('header.doors')}
               </p>
             </h1>
           </div>
           <p className="headerLeftText">
             <img src={icon1} className="headerLeftIcon" alt="icon1" />
-            <span>{t('header.headerLeftText4')}</span>
+            <span>{t('header.StraightAway')}</span>
           </p>
           <p className="headerLeftText">
           <img src={icon2} className="headerLeftIcon" alt="icon2" />
-          <span>{t('header.headerLeftText5')}</span>
+          <span>{t('header.service')}</span>
           </p>
           <p className="headerLeftText">
           <img src={icon3} className="headerLeftIcon" alt="icon3" />
-          <span>{t('header.headerLeftText6')}</span>
+          <span>{t('header.guarantee')}</span>
           </p>
         </div>
         <div className="headerRight">
           <div className="headerRightForm">
-            <h1>{t('header.headerRightText1')}</h1>
-            <p>{t('header.headerRightText2')}</p>
-            <input type="text" className="headerRightName" placeholder={t('header.headerRightInput4')} />
-            <input type="text" className="headerRightNumber" placeholder={t('header.headerRightInput5')} />
-            <button className="btn">{t('header.headerRightText3')}</button>
+            <h1>{t('header.free')}</h1>
+            <p>{t('header.fill')}</p>
+            <input type="text" className="headerRightName" placeholder={t('header.inputName')} />
+            <input type="text" className="headerRightNumber" placeholder={t('header.inputNumber')} />
+            <button className="btn">{t('header.dispatch')}</button>
           </div>
         </div>
       </div>

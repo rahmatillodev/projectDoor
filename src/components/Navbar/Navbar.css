@@ -61,7 +61,8 @@ nav .nav > img {
   height: 100%;
   
 }
-.nav .navbarBottom .navbarBottomLinks > a:nth-child(1):after {
+.navbarBottomLinks  > .active:after,
+.navbarDropDown > .active:after {
   content: "";
   position: absolute;
   width: 100%;
