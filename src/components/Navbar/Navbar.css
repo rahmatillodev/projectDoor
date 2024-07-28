@@ -9,6 +9,7 @@ nav {
   background: white;
   display: flex;
   justify-content: center;
+  text-transform: capitalize;
 }
 
 nav .nav > img {
@@ -58,6 +59,7 @@ nav .nav > img {
   align-items: center;
   justify-content: center;
   height: 100%;
+  
 }
 .nav .navbarBottom .navbarBottomLinks > a:nth-child(1):after {
   content: "";
@@ -113,12 +115,33 @@ nav .nav > img {
   align-items: center;
 }
 .navbarBottom .languages {
-  height: 100%;
-  overflow: hidden;
+  /* overflow: hidden; */
+  position: relative;
 }
 .navbarBottom .languages .language {
   display: flex;
   align-items: center;
-  margin-top: 20px;
   gap: 5px;
+  cursor: pointer;
+}
+.anotherLanguage {
+  display: none;
+  background: white;
+  position: absolute;
+  left: -30px;
+  padding: 0px 30px 10px;
+  border-radius: 10px;
+}
+.anotherLanguage .language {
+  margin-top: 10px;
+}
+.languages:hover .anotherLanguage {
+  /* height: 100px; */
+  display: block;
+}
+.language .languageIcon {
+  transition: 0.2s;
+}
+.language:hover .languageIcon {
+  transform: rotate(-180deg);
 }

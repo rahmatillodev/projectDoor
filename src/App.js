@@ -7,11 +7,13 @@ import Delivery from "./pages/Delivery/Delivery";
 import Katalog from "./pages/Katalog/Katalog";
 import Pay from "./pages/Pay/Pay";
 import Contact from "./pages/Contact/Contact";
+
+
 const App = () => {
   return (
     <div>
       <BrowserRouter>
-      <Navbar/>
+      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/delivery" element={<Delivery />} />

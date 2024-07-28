@@ -1,0 +1,26 @@
+{
+    "navbar":{
+        "navbarTopLink1":"Buyurtma asosida eshiklar ishlab chiqaruvchi kompaniya",
+        "navbarTopLink2":"Bizga telegramda yozing",
+        "navbarTopLink3":"Biz hozir ishlayabmiz, qo’ng’iroq qiling:",
+        "navbarBottomLink1":"Bosh sahifa",
+        "navbarBottomLink2":"Katalog",
+        "navbarBottomLink3":"Yetkazib berish va o'rnatish",
+        "navbarBottomLink4":"To'lov",
+        "navbarBottomLink5":"Biz bilan bog'lanish"
+    },
+    "header":{
+        "headerLeftText1":"premium sifatdagi",
+        "headerLeftText2":"mdf",
+        "headerLeftText3":"Eshiklar",
+        "headerLeftText4":"To’g’ridan to’g’ri ishlab chiqaruvchidan",
+        "headerLeftText5":"1 yil bepul serviz ko’rsatamiz",
+        "headerLeftText6":"Sifatga 5 yillik kafolat beramiz",
+        "headerRightText1":"O'lchovini bepul chiqarish uchun",
+        "headerRightText2":"Buyurtma uchun quyidagi formani to’ldiring",
+        "headerRightText3":"Jo'natish",
+        "headerRightInput4":"Ismingiz",
+        "headerRightInput5":"+998"
+    }
+
+}

@@ -5,7 +5,13 @@ import { LuPhone } from "react-icons/lu";
 import flag from "../../assets/flag.png";
 import logo from "../../assets/logo.png";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 const Navbar = () => {
+  const { t, i18n } = useTranslation();
+
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+  };
   return (
     <nav>
       <div className="nav">
@@ -14,13 +20,13 @@ const Navbar = () => {
         </Link>
         <div className="navbar">
           <div className="navbarTop">
-            <p>Buyurtma asosida eshiklar ishlab chiqaruvchi kompayniya</p>
+            <p>{t("navbar.navbarTopLink1")}</p>
             <p>
               <FaTelegram className="navTelegramIcon" />
-              Bizga telegramda yozing
+              {t("navbar.navbarTopLink2")}
             </p>
             <div className="navbarTopRight">
-              <p>Biz hozir ishlayabmiz, qo’ng’iroq qiling:</p>
+              <p>{t("navbar.navbarTopLink3")}</p>
               <h3>
                 <LuPhone /> +998987654321
               </h3>
@@ -28,37 +34,37 @@ const Navbar = () => {
           </div>
           <div className="navbarBottom">
             <div className="navbarBottomLinks">
-              <Link to="/">Bosh sahifa</Link>
+              <Link to="/">{t("navbar.navbarBottomLink1")}</Link>
               <div className="navbarDropDown">
                 <Link to="katalog">
-                  Katalog <FaAngleDown />
+                  {t("navbar.navbarBottomLink2")} <FaAngleDown />
                 </Link>
                 <div className="dropdownElements">
-                  <Link to="katalog">Katalog 1</Link>
-                  <Link to="katalog">Katalog 2</Link>
-                  <Link to="katalog">Katalog 3</Link>
-                  <Link to="katalog">Katalog 4</Link>
+                  <Link to="katalog">{t("navbar.navbarBottomLink2")} 1</Link>
+                  <Link to="katalog">{t("navbar.navbarBottomLink2")} 2</Link>
+                  <Link to="katalog">{t("navbar.navbarBottomLink2")} 3</Link>
+                  <Link to="katalog">{t("navbar.navbarBottomLink2")} 4</Link>
                 </div>
               </div>
-              <Link to="delivery">Yetkazib berish va o'rnatish</Link>
-              <Link to="pay">To'lov</Link>
-              <Link to="contact">Biz bilan bog'lanish</Link>
+              <Link to="delivery">{t("navbar.navbarBottomLink3")}</Link>
+              <Link to="pay">{t("navbar.navbarBottomLink4")}</Link>
+              <Link to="contact">{t("navbar.navbarBottomLink5")}</Link>
             </div>
             <div className="languages">
-              <div className="language">
+              <div onClick={() => changeLanguage("kz")} className="language">
                 <img src={flag} alt="language" />
-                <span>Uzb</span>
+                <span>Kz</span>
                 <FaAngleDown className="languageIcon" />
               </div>
-              <div className="language">
+              <div className="anotherLanguage">
+              <div onClick={() => changeLanguage("ru")} className="language">
                 <img src={flag} alt="language" />
-                <span>Uzb</span>
-                <FaAngleDown className="languageIcon" />
+                <span>Rus</span>
               </div>
-              <div className="language">
-                <img src={flag} alt="language" />
-                <span>Uzb</span>
-                <FaAngleDown className="languageIcon" />
+                <div onClick={() => changeLanguage("uz")} className="language">
+                  <img src={flag} alt="language" />
+                  <span>Uzb</span>
+                </div>
               </div>
             </div>
           </div>

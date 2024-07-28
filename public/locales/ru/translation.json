@@ -1,0 +1,26 @@
+{
+    "navbar":{
+        "navbarTopLink1":"Компания по производству дверей на заказ.",
+        "navbarTopLink2":"Напишите нам в телеграмм",
+        "navbarTopLink3":"Мы работаем, звоните нам:",
+        "navbarBottomLink1":"Домашняя страница",
+        "navbarBottomLink2":"Каталог",
+        "navbarBottomLink3":"Доставка и установка",
+        "navbarBottomLink4":"Оплата",
+        "navbarBottomLink5":"связаться с нами"
+    },
+    "header":{
+        "headerLeftText1":"высокое качество",
+        "headerLeftText2":"МДФ",
+        "headerLeftText3":"Двери",
+        "headerLeftText4":"Напрямую от производителя",
+        "headerLeftText5":"Предоставляем бесплатное обслуживание в течение 1 года",
+        "headerLeftText6":"Даем гарантию качества 5 лет",
+        "headerRightText1":"Чтобы опубликовать измерение бесплатно",
+        "headerRightText2":"Заполните форму ниже, чтобы сделать заказ",
+        "headerRightText3":"Перевозки",
+        "headerRightInput4":"Ваше имя",
+        "headerRightInput5":"+7"
+    }
+
+}

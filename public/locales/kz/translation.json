@@ -1,0 +1,26 @@
+{
+    "navbar":{
+        "navbarTopLink1":"Тапсырыс бойынша есіктерді шығаратын компания",
+        "navbarTopLink2":"Бізге телеграмға жазыңыз",
+        "navbarTopLink3":"Біз қазір жұмыс істеп жатырмыз, бізге қоңырау шалыңыз:",
+        "navbarBottomLink1":"Негізгі бет",
+        "navbarBottomLink2":"Каталог",
+        "navbarBottomLink3":"Жеткізу және орнату",
+        "navbarBottomLink4":"Төлем",
+        "navbarBottomLink5":"бізбен хабарласыңы"
+    },
+    "header":{
+        "headerLeftText1":"премиум сапа",
+        "headerLeftText2":"MDF",
+        "headerLeftText3":"Есіктер",
+        "headerLeftText4":"Тікелей өндірушіден",
+        "headerLeftText5":"1 жылға тегін қызмет көрсетеміз",
+        "headerLeftText6":"Сапаға 5 жыл кепілдік береміз",
+        "headerRightText1":"Өлшемді тегін босату үшін",
+        "headerRightText2":"Тапсырыс беру үшін төмендегі форманы толтырыңыз",
+        "headerRightText3":"Жеткізілім",
+        "headerRightInput4":"Сіздің атыңыз",
+        "headerRightInput5":"+7"
+    }
+
+}
