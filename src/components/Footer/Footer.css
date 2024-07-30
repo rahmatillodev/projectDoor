@@ -10,13 +10,12 @@ footer {
     padding-top: 100px;
     gap: 50px;
 }
-.footer div {
-
-}
 .footer div a {
     display: block;
     padding-bottom: 20px;
     color: black;
+    display: flex;
+    align-items: center;
 }
 .footer div a svg{
     font-size: 20px;
@@ -35,4 +34,7 @@ footer {
 .footerBottom .footerBottomRight {
     display: flex;
     gap: 50px;
+}
+.footer p {
+    letter-spacing: 1px;
 }

@@ -1,23 +1,25 @@
+import { useTranslation } from "react-i18next";
 import "./About.css";
 import { FaInfinity } from "react-icons/fa6";
 const About = () => {
+  const {t} = useTranslation()
   return (
     <div className="about">
       <div className="aboutText">
-        <h1>10 yil</h1>
-        <p>Tajribaga ega mutaxasislar</p>
+        <h1>{t('about.year')}</h1>
+        <p>{t('about.specialists')}</p>
       </div>
       <div className="aboutText">
-        <h1>7 000 dan</h1>
-        <p>Ortiq topshirilgan loyihalar</p>
+        <h1>{t('about.projectNumber')}</h1>
+        <p>{t('about.project')}</p>
       </div>
       <div className="aboutText">
-        <h1>47 000 ta</h1>
-        <p>Ishlab chiqarilgan mahsulot</p>
+        <h1>{t('about.productNumber')}</h1>
+        <p>{t('about.product')}</p>
       </div>
       <div className="aboutText">
         <h1><FaInfinity /> </h1>
-        <p>Cheksiz asortiment</p>
+        <p>{t('about.infinity')}</p>
       </div>
     </div>
   );

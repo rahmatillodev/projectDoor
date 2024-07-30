@@ -9,59 +9,30 @@ import { Navigation, Autoplay } from "swiper/modules";
 import { FaStar, FaRegStar } from "react-icons/fa";
 import { useEffect, useState } from "react";
 const HomeCategory = () => {
-  const array = [
-    {
-      id: 0,
-      img: door,
-      desc: "Eshik",
-      title: "Eshik kilassik",
-      star: 5,
-    },
-    {
-      id: 1,
-      img: door,
-      desc: "Eshik",
-      title: "Eshik kilassik",
-      star: 5,
-    },
-    {
-      id: 2,
-      img: door,
-      desc: "Eshik",
-      title: "Eshik kilassik",
-      star: 5,
-    },
-    {
-      id: 3,
-      img: door,
-      desc: "Eshik",
-      title: "Eshik kilassik",
-      star: 5,
-    },
-    {
-      id: 4,
-      img: door,
-      desc: "Eshik",
-      title: "Eshik kilassik",
-      star: 5,
-    },
-    {
-      id: 5,
-      img: door,
-      desc: "Eshik",
-      title: "Eshik kilassik",
-      star: 5,
-    },
-  ];
+  const [data, setData] = useState([]);
+  const [filterCategory, setfilterCategory] = useState("all");
+  const [active, setActive] = useState("all")
 
+  useEffect(() => {
+    fetch("https://fakestoreapi.com/products")
+      .then((res) => res.json())
+      .then((res) => {
+        console.log(res);
+        setData(res);
+      });
+  }, [filterCategory]);
+
+  const buttons = Array.from(new Set(data.map((category) => category.category)));
   return (
     <div className="homeCategory">
       <h1>Bizning Mahsulot</h1>
       <div className="homeCategoryButtons">
-        <button>Eshik</button>
-        <button>Stol stul</button>
-        <button>Qozon</button>
-        <button>Zinapoya</button>
+        <button className={active === "all" ? "active":""} onClick={() => (setfilterCategory("all"), setActive('all'))}>All</button>
+        {buttons.map((button) => (
+          <button className={active === button ? "active":""} key={button} onClick={() => (setfilterCategory(button), setActive(button))}>
+            {button}
+          </button>
+        ))}
       </div>
       <Swiper
         spaceBetween={30}
@@ -85,25 +56,26 @@ const HomeCategory = () => {
         modules={[Autoplay, Navigation]}
         className="homeCategorySwipers"
       >
-        {array.map((item) => (
-          <SwiperSlide key={item.id} className="homeCategorySwiper">
-            <div className="homeCategorySwiperImage">
-              <img src={item.img} alt="" />
-            </div>
-            <div className="homeCategorySwiperText">
-              <p>{item.desc}</p>
-              <h2>{item.title}</h2>
-              <div className="homeCategorySwiperStar">
-                <FaStar />
-                <FaStar />
-                <FaStar />
-                <FaRegStar />
-                <FaRegStar />
+        {data.filter(item => filterCategory === "all" ? item : item.category === filterCategory ? item : "")
+        .map((item) => (
+            <SwiperSlide key={item.id} className="homeCategorySwiper">
+              <div className="homeCategorySwiperImage">
+                <img src={item.image} alt="" />
               </div>
-              <button>Batafsil</button>
-            </div>
-          </SwiperSlide>
-        ))}
+              <div className="homeCategorySwiperText">
+                <p>{item.category}</p>
+                <h2>{item.title}</h2>
+                <div className="homeCategorySwiperStar">
+                  <FaStar />
+                  <FaStar />
+                  <FaStar />
+                  <FaRegStar />
+                  <FaRegStar />
+                </div>
+                <button>Batafsil</button>
+              </div>
+            </SwiperSlide>
+          ))}
       </Swiper>
       <div className="homeLinks">
         <p className="homeLink">

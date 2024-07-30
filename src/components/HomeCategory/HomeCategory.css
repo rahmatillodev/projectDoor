@@ -17,10 +17,12 @@
   padding: 10px;
   border-radius: 20px;
   transition: 0.3s;
+  text-transform: capitalize;
 }
-.homeCategoryButtons button:focus {
+.homeCategoryButtons .active {
   background: white;
 }
+
 
 .homeCategorySwipers {
   width: 85%;
@@ -38,6 +40,8 @@
 }
 .homeCategorySwiperImage img {
   height: 300px;
+  object-fit: contain;
+  width: 100%;
   transform: translateY(-50px);
   padding-bottom: 15px;
 }
@@ -45,14 +49,27 @@
   background: white;
   text-align: start;
   padding: 20px;
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   border-radius: 0px 0px 20px 20px;
 }
 .homeCategorySwiperText p {
   color: #8d8d8d;
+  text-transform: capitalize;
 }
 .homeCategorySwiperText h2 {
   color: #1e1e1e;
-  padding: 10px 0px;
+  /* padding: 5px 0px; */
+  display: -webkit-box;
+  /* height: 67px; */
+  line-height: 30px;
+  font-weight: 600;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .homeCategorySwiperStar {
   display: flex;
@@ -72,7 +89,6 @@
   background: #f7f7f7;
   cursor: pointer;
 }
-
 
 .homeCategory .homeLinks {
   padding-top: 70px;

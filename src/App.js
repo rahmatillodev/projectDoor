@@ -8,20 +8,19 @@ import Katalog from "./pages/Katalog/Katalog";
 import Pay from "./pages/Pay/Pay";
 import Contact from "./pages/Contact/Contact";
 
-
 const App = () => {
   return (
     <div>
       <BrowserRouter>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/delivery" element={<Delivery />} />
-        <Route path="/katalog" element={<Katalog />} />
-        <Route path="/pay" element={<Pay />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
-      <Footer/>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/delivery" element={<Delivery />} />
+          <Route path="/katalog" element={<Katalog />} />
+          <Route path="/pay" element={<Pay />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+        <Footer />
       </BrowserRouter>
     </div>
   );
