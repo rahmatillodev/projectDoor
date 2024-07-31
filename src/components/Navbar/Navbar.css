@@ -61,8 +61,7 @@ nav .nav > img {
   height: 100%;
   
 }
-.navbarBottomLinks  > .active:after,
-.navbarDropDown > .active:after {
+.navbarBottomLinks  > .active:after{
   content: "";
   position: absolute;
   width: 100%;
@@ -71,6 +70,17 @@ nav .nav > img {
   left: 0px;
   border-radius: 0px 0px 4px 4px;
   top: 0px;
+  transition: 0.3s;
+}
+.navbarDropDown > .active:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 6px;
+  background: var(--color);
+  left: 0px;
+  border-radius: 0px 0px 4px 4px;
+  top: -25px;
   transition: 0.3s;
 }
 
