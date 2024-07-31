@@ -8,7 +8,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper/modules";
 import { FaStar } from "react-icons/fa";
 import { FaRegStar } from "react-icons/fa6";
+import { useTranslation } from "react-i18next";
 const Testimonial = () => {
+  const {t} = useTranslation()
   let array = [
     {
       bgImg: image,
@@ -48,8 +50,8 @@ const Testimonial = () => {
   ];
   return (
     <div className="testimonial">
-      <p>fikrlar</p>
-      <h1>Mijozlarimizning Fikrlari</h1>
+      <p>{t('testimonial.testimonialTitle')}</p>
+      <h1>{t('testimonial.testimonialDesc')}</h1>
       <Swiper
         spaceBetween={30}
         navigation={true}

@@ -8,10 +8,14 @@ import "swiper/css/navigation";
 import { Navigation, Autoplay } from "swiper/modules";
 import { FaStar, FaRegStar } from "react-icons/fa";
 import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 const HomeCategory = () => {
+
+
   const [data, setData] = useState([]);
   const [filterCategory, setfilterCategory] = useState("all");
-  const [active, setActive] = useState("all")
+  // const [active, setActive] = useState("all")
 
   useEffect(() => {
     fetch("https://fakestoreapi.com/products")
@@ -23,13 +27,19 @@ const HomeCategory = () => {
   }, [filterCategory]);
 
   const buttons = Array.from(new Set(data.map((category) => category.category)));
+
+
+
+  const {t} = useTranslation()
+
+
   return (
     <div className="homeCategory">
-      <h1>Bizning Mahsulot</h1>
+      <h1>{t('homeCategory.weProduct')}</h1>
       <div className="homeCategoryButtons">
-        <button className={active === "all" ? "active":""} onClick={() => (setfilterCategory("all"), setActive('all'))}>All</button>
+        <button className={filterCategory === "all" ? "active":""} onClick={() => (setfilterCategory("all"))}>All</button>
         {buttons.map((button) => (
-          <button className={active === button ? "active":""} key={button} onClick={() => (setfilterCategory(button), setActive(button))}>
+          <button className={filterCategory === button ? "active":""} key={button} onClick={() => (setfilterCategory(button))}>
             {button}
           </button>
         ))}
@@ -50,7 +60,7 @@ const HomeCategory = () => {
           },
         }}
         autoplay={{
-          delay: 5000,
+          delay: 3000,
           disableOnInteraction: false,
         }}
         modules={[Autoplay, Navigation]}
@@ -79,7 +89,7 @@ const HomeCategory = () => {
       </Swiper>
       <div className="homeLinks">
         <p className="homeLink">
-          <a href="#">To’liq ko’rish</a> <img src={linkRight} alt="linkRight" />
+          <Link to="katalog">{t('homeCategory.fullView')}</Link> <img src={linkRight} alt="linkRight" />
         </p>
       </div>
     </div>

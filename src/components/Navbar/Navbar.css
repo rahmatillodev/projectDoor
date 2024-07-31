@@ -131,6 +131,7 @@ nav .nav > img {
   background: white;
   position: absolute;
   left: -30px;
+  top: -10px;
   padding: 0px 30px 10px;
   border-radius: 10px;
 }
@@ -146,4 +147,28 @@ nav .nav > img {
 }
 .language:hover .languageIcon {
   transform: rotate(-180deg);
+}
+.navImage .menuIcon {
+  font-size: 40px;
+  display: none;
+}
+@media screen and (max-width:1100px) {
+  .navbar .navbarTop p  {
+    font-size: 13px;
+  }
+
+}
+@media screen and (max-width:900px) {
+  .navbar {
+    display: none;
+  }
+  .navImage {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navImage .menuIcon {
+    display: block;
+  }
 }

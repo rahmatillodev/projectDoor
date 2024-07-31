@@ -75,5 +75,46 @@
         "copyright":"Mualliflik huquqi © 2024",
         "terms":"Foydalanish shartlari",
         "privacy":"Maxfiylik siyosati"
+    },
+    "homeCategory":{
+        "weProduct":"Bizning Mahsulotlarimiz",
+        "fullView":"To'liq Ko'rish"
+    },
+    "example":{
+        "products":"Mahsulotlar",
+        "exampleWork":"Bizning ishlarimizdan Na’munalar",
+        "exampleText":"Chunki panto juda qimmat va mashhur kapitalni ishlatib, lekin nisbatan arzon narxda atrof-muhitimiz uchun mebel loyihalashga juda jiddiy yondashamiz"
+    },
+    "testimonial":{
+        "testimonialTitle":"fikrlar",
+        "testimonialDesc":"Mijozlarimizning Fikrlari"
+    },
+    "service":{
+        "selection":"Tanlovda adashsangiz quyidagi",
+        "selectionRed":"muammolarga",
+        "possible":"duch kelishingiz mumkin",
+        "time":"Asablaringiz va qimmatli vaqtingizdan ayrilishingiz",
+        "fails":"Furnitura tez sinib ketishi, ishdan chiqishi",
+        "deadline":"Eshik muddatdan kechiktirib berilishi",
+        "home":"Uyingiz intereriga mos tushmay qolishi yoki yo'qligi",
+        "loss":"Qiynalib topgan mablag'ingizni yo'qotishingiz",
+        "cold":"Qish kunlarida o'zidan sovuq  shamol o'tkazishi",
+        "colorNot":"Tezda rangi o'chib, sarg'ayib ketishi",
+        "waterDoor":"Eshikka suv tegsa, shishib ketishi yoki yorilishi",
+        "problemDoor":"Bizning eshiklar bilan yuqoridagi muammolarga duch kelsangiz,",
+        "administration":"ma'muriyat",
+        "cost":"harajat",
+        "and":"va",
+        "obligations":"majburiyatlarni",
+        "undertakes":"o’z zimmasiga oladi",
+        "guarantee":"5 yil sifatiga kafolat beramiz",
+        "freeService":"1 yil bepul servis ko’rsatamiz",
+        "order":"Buyurtma berish"
+    },
+    "design":{
+        "advantage":"Yana bir ustunlik jihatimiz",
+        "control":"7 bosqichli sifat nazoratidan o’tkazamiz",
+        "stage":"Bosqich",
+        "response":"Eng yaxshi xizmatni taqdim etamiz va juda tez javob beramiz."
     }
 }

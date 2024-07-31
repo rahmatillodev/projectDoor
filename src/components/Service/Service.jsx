@@ -3,7 +3,9 @@ import img from "../../assets/service.png"
 import xIcon from "../../assets/x-octagon.svg"
 import form from "../../assets/form.png"
 import success from "../../assets/success.svg"
+import { useTranslation } from "react-i18next"
 const Service = () => {
+    const {t} = useTranslation()
   return (
     <div className="service">
         <div className="serviceTop">
@@ -11,29 +13,30 @@ const Service = () => {
                 <img src={img} alt="serviceTopImage" />
             </div>
             <div className="serviceTopText">
-                <h2>Tanlovda adashsangiz quyidagi
-                <span> muammolarga</span> duch kelishingiz mumkin </h2>
+                <h2>{t('service.selection')}
+                <span> {t('service.selectionRed')}</span> {t('service.possible')} </h2>
                 <ul>
-                    <li><img src={xIcon} alt="xIcon" /> <span>Asablaringiz va qimmatli vaqtingizdan ayrilishingiz</span></li>
-                    <li><img src={xIcon} alt="xIcon" /> <span>Furnitura tez sinib ketishi, ishdan chiqishi</span></li>
-                    <li><img src={xIcon} alt="xIcon" /> <span>Eshik muddatdan kechiktirib berilishi</span></li>
-                    <li><img src={xIcon} alt="xIcon" /> <span>Uyingiz intereriga mos tushmay qolishi yoki yo'qligi</span></li>
-                    <li><img src={xIcon} alt="xIcon" /> <span>Qiynalib topgan mablag'ingizni yo'qotishingiz</span></li>
-                    <li><img src={xIcon} alt="xIcon" /> <span>Qish kunlarida o'zidan sovuq shamol o'tkazishi</span></li>
-                    <li><img src={xIcon} alt="xIcon" /> <span>Tezda rangi o'chib, sarg'ayib ketishi</span></li>
-                    <li><img src={xIcon} alt="xIcon" /> <span>Eshikka suv tegsa, shishib ketishi yoki yorilishi</span></li>
+                    <li><img src={xIcon} alt="xIcon" /> <span>{t('service.time')}</span></li>
+                    <li><img src={xIcon} alt="xIcon" /> <span>{t('service.fails')} </span></li>
+                    <li><img src={xIcon} alt="xIcon" /> <span>{t('service.deadline')}</span></li>
+                    <li><img src={xIcon} alt="xIcon" /> <span>{t("service.home")} </span></li>
+                    <li><img src={xIcon} alt="xIcon" /> <span>{t("service.loss")}</span></li>
+                    <li><img src={xIcon} alt="xIcon" /> <span>{t("service.cold")}</span></li>
+                    <li><img src={xIcon} alt="xIcon" /> <span>{t("service.colorNot")}</span></li>
+                    <li><img src={xIcon} alt="xIcon" /> <span>{t('service.waterDoor')}</span></li>
                 </ul>
             </div>
         </div>
         <div className="serviceBottom">
-            <h2>Bizning eshiklar bilan yuqoridagi muammolarga duch kelsangiz,
-            ma’muriyat <span>harajat</span> va <span>majburiyatlarni</span> o’z zimmasiga oladi</h2>
+
+            <h2> {t('service.problemDoor')}
+            {t('service.administration')} <span>{t('service.cost')}</span> {t('service.and')} <span>{t('service.obligations')}</span> {t('service.undertakes')}</h2>
             <div className="serviceBottomImages">
                 <img className="fromImage" src={form} alt="form" />
                 <div className="serviceBottomCard">
-                    <p>5 yil sifatiga kafolat beramiz</p>
-                    <p>1 yil bepul servis ko’rsatamiz</p>
-                    <button>Buyurtma berish</button>
+                    <p>{t('service.guarantee')}</p>
+                    <p>{t('service.freeService')}</p>
+                    <button>{t('service.order')}</button>
                     <p></p>
                 </div>
                 <img src={success} className="successImage" alt="success" />

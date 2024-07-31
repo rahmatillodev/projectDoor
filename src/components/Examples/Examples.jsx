@@ -3,15 +3,16 @@ import example1 from "../../assets/example1.png"
 import example2 from "../../assets/example2.png"
 import example3 from "../../assets/example3.png"
 import "./Examples.css"
+import { useTranslation } from 'react-i18next'
 const Examples = () => {
+  const {t} = useTranslation()
   return (
     <div className='example'>
         <div className="exampleLeft">
             <div className="exampleLeftText">
-            <span>Mahsulotlar</span>
-            <h2>Bizning ishlarimizdan Na’munalar</h2>
-            <p>Because panto was very serious about designing furniture for our environment, using a very expensive and famous capital but at a relatively low price</p>
-     
+            <span>{t('example.products')}</span>
+            <h2>{t('example.exampleWork')}</h2>
+            <p>{t('example.exampleText')}</p>
             </div>
         </div>
         <div className="exampleRight">
