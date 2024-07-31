@@ -22,7 +22,6 @@
   text-align: center;
   width: 50%;
   padding-right: 30px;
-
 }
 .serviceTop .serviceTopText h2 {
   font-size: 35px;
@@ -81,8 +80,8 @@
 .serviceBottom h2 {
   font-size: 32px;
   font-weight: 400;
-  line-height: 40px;
-  width: 80%;
+  line-height: 45px;
+  width: 75%;
   margin: 0px auto;
 }
 .serviceBottom h2 span {
@@ -156,7 +155,27 @@
   }
 }
 @media screen and (max-width: 600px) {
-.serviceTop .serviceTopText ul {
-  grid-template-columns: 1fr;
-}
+  .serviceTop .serviceTopText ul {
+    grid-template-columns: 1fr;
+  }
+  .serviceTop .serviceTopText h2 {
+    font-size: 25px;
+    line-height: 30px;
+  }
+  .serviceBottom h2 {
+    font-size: 22px;
+    width: 95%;
+  }
+  .serviceBottomImages .fromImage {
+    order: 3;
+    z-index: 1;
+  }
+  
+  .serviceBottomImages .serviceBottomCard {
+    order: 2;
+  }
+  
+  .serviceBottomImages .successImage {
+    order: 1;
+  }
 }

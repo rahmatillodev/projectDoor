@@ -72,5 +72,24 @@
   display: flex;
   justify-content: center;
   gap: 10px;
-  color: #F6973F;
+  color: #f6973f;
+}
+@media screen and (max-width: 500px) {
+  .testimonial {
+    width: 90%;
+    margin: 0px auto;
+  }
+.testimonial > h1 {
+  font-size: 35px;
+}
+  .testimonialCards {
+    width: 100%;
+    height: auto;
+  }
+.testimonial .swiper-slide {
+  height: 400px;
+}
+.testimonial .testimonialCardText {
+  height: 60%;
+}
 }

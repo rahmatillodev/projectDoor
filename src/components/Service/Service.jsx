@@ -28,9 +28,8 @@ const Service = () => {
             </div>
         </div>
         <div className="serviceBottom">
-
             <h2> {t('service.problemDoor')}
-            {t('service.administration')} <span>{t('service.cost')}</span> {t('service.and')} <span>{t('service.obligations')}</span> {t('service.undertakes')}</h2>
+            {t('service.administration')} <span> {t('service.cost')} </span> {t('service.and')} <span> {t('service.obligations')} </span> {t('service.undertakes')}</h2>
             <div className="serviceBottomImages">
                 <img className="fromImage" src={form} alt="form" />
                 <div className="serviceBottomCard">

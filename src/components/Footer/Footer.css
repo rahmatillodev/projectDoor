@@ -46,8 +46,18 @@ footer {
 }
 
 @media screen and (max-width: 400px) {
-    .footer {
-      grid-template-columns: auto ;
-    }
+  .footer {
+    grid-template-columns: auto;
   }
-  
+  .footerBottom {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    width: 90%;
+  }
+
+  .footerBottom .footerBottomRight {
+    gap: 0px;
+    justify-content: space-between;
+  }
+}
