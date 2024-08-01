@@ -31,14 +31,14 @@ const Service = () => {
             <h2 data-aos="zoom-in"  data-aos-delay="100"> {t('service.problemDoor')}
             {t('service.administration')} <span> {t('service.cost')} </span> {t('service.and')} <span> {t('service.obligations')} </span> {t('service.undertakes')}</h2>
             <div className="serviceBottomImages">
-                <img data-aos="zoom-in"  data-aos-delay="200" className="fromImage" src={form} alt="form" />
-                <div data-aos="zoom-in"  data-aos-delay="200" className="serviceBottomCard">
+                <img data-aos="zoom-in"  data-aos-delay="500" className="fromImage" src={form} alt="form" />
+                <div data-aos="zoom-in"  data-aos-delay="500" className="serviceBottomCard">
                     <p>{t('service.guarantee')}</p>
                     <p>{t('service.freeService')}</p>
                     <button>{t('service.order')}</button>
                     <p></p>
                 </div>
-                <img data-aos="zoom-in"  data-aos-delay="200" src={success} className="successImage" alt="success" />
+                <img data-aos="zoom-in"  data-aos-delay="500" src={success} className="successImage" alt="success" />
             </div>
         </div>
     </div>
