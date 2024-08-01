@@ -53,7 +53,6 @@ const Testimonial = () => {
       <p>{t("testimonial.testimonialTitle")}</p>
       <h1>{t("testimonial.testimonialDesc")}</h1>
       <Swiper
-        slidesPerView={3}
         spaceBetween={30}
         loop={true}
         modules={[Navigation, Autoplay]}
@@ -62,10 +61,10 @@ const Testimonial = () => {
           prevEl: ".swiper-button-prev",
         }}
         breakpoints={{
-          600: {
+          500: {
             slidesPerView: 1,
           },
-          900: {
+          650: {
             slidesPerView: 2,
           },
           1200: {

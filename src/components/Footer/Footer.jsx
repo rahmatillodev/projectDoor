@@ -1,5 +1,5 @@
 import "./Footer.css";
-import logo from "../../assets/logo.png";
+import logo from "../../assets/logo.svg";
 import { FaFacebook } from "react-icons/fa6";
 import { BsInstagram, BsTwitter } from "react-icons/bs";
 import { useTranslation } from "react-i18next";

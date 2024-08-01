@@ -3,7 +3,7 @@ import "./Navbar.css";
 import { FaAngleDown, FaBars, FaTelegram } from "react-icons/fa6";
 import { LuPhone } from "react-icons/lu";
 import flag from "../../assets/flag.png";
-import logo from "../../assets/logo.png";
+import logo from "../../assets/logo.svg";
 import { Link, NavLink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 

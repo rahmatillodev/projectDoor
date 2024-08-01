@@ -6,25 +6,25 @@ const About = () => {
   return (
     <div className="about">
       <div className="aboutText">
-        <div data-aos="fade-up">
+        <div data-aos="fade-up" data-aos-duration="300">
         <h1>{t('about.year')}</h1>
         <p>{t('about.specialists')}</p>
         </div>
       </div>
       <div className="aboutText">
-        <div data-aos="fade-up" data-aos-duration="1300">
+        <div data-aos="fade-up" data-aos-duration="600">
         <h1>{t('about.projectNumber')}</h1>
         <p>{t('about.project')}</p>
         </div>
       </div>
       <div className="aboutText">
-        <div  data-aos="fade-up" data-aos-duration="1600">
+        <div  data-aos="fade-up" data-aos-duration="900">
         <h1>{t('about.productNumber')}</h1>
         <p>{t('about.product')}</p>
         </div>
       </div>
       <div className="aboutText">
-        <div  data-aos="fade-up" data-aos-duration="1900" >
+        <div  data-aos="fade-up" data-aos-duration="1200" >
         <h1><FaInfinity /> </h1>
         <p>{t('about.infinity')}</p>
         </div>

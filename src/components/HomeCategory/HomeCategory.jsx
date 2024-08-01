@@ -49,9 +49,7 @@ const HomeCategory = () => {
         ))}
       </div>
       <Swiper
-        slidesPerView={3}
         spaceBetween={30}
-        centeredSlides={true}
         parallax={true}
         mousewheel={true}
         loop={data.length > 4 ? true : false}
@@ -68,10 +66,10 @@ const HomeCategory = () => {
           500: {
             slidesPerView: 1,
           },
-          750: {
+          800: {
             slidesPerView: 2,
           },
-          1050: {
+          1200: {
             slidesPerView: 3,
           },
         }}

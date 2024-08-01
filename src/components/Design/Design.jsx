@@ -7,7 +7,7 @@ const Design = () => {
     <div className="design">
       <h1>{t("design.advantage")}</h1>
       <span>{t("design.control")}</span>
-      <div className="designImage">
+      <div className="designImage" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="800">
         <div className="designCard designCard2">
           <div className="number">2</div>
           <div>

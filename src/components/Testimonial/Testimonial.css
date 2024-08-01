@@ -79,17 +79,17 @@
     width: 90%;
     margin: 0px auto;
   }
-.testimonial > h1 {
-  font-size: 35px;
-}
+  .testimonial > h1 {
+    font-size: 35px;
+  }
   .testimonialCards {
     width: 100%;
     height: auto;
   }
-.testimonial .swiper-slide {
-  height: 400px;
-}
-.testimonial .testimonialCardText {
-  height: 60%;
-}
+  .testimonial .swiper-slide {
+    height: 400px;
+  }
+  .testimonial .testimonialCardText {
+    height: 60%;
+  }
 }

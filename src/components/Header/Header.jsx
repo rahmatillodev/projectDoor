@@ -6,7 +6,7 @@ import { useTranslation } from "react-i18next";
 const Header = () => {
   const { t } = useTranslation();
   return (
-    <header data-aos="fade-down">
+    <header>
       <div className="header">
         <div className="headerLeft" data-aos="fade-right">
           <div className="headerLeftTitle">
@@ -30,8 +30,8 @@ const Header = () => {
             <span>{t("header.guarantee")}</span>
           </p>
         </div>
-        <div className="headerRight" data-aos="fade-left">
-          <div className="headerRightForm">
+        <div className="headerRight">
+          <div className="headerRightForm" data-aos="fade-left">
             <h1>{t("header.free")}</h1>
             <p>{t("header.fill")}</p>
             <input

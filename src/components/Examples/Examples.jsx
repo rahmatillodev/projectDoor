@@ -8,7 +8,7 @@ const Examples = () => {
   const {t} = useTranslation()
   return (
     <div className='example'>
-        <div className="exampleLeft">
+        <div className="exampleLeft" data-aos="zoom-in-right" data-aos-delay="500">
             <div className="exampleLeftText">
             <span>{t('example.products')}</span>
             <h2>{t('example.exampleWork')}</h2>
@@ -17,10 +17,10 @@ const Examples = () => {
         </div>
         <div className="exampleRight">
             <div>
-            <img src={example3} alt="example3" />
-            <img src={example1} alt="example1" />
+            <img src={example3}  data-aos="zoom-in"  data-aos-delay="500" alt="example3" />
+            <img src={example1}  data-aos="zoom-in"  data-aos-delay="700" alt="example1" />
             </div>
-            <img src={example2} alt="example2" />
+            <img src={example2}  data-aos="zoom-in"  data-aos-delay="900" alt="example2" />
         </div>
     </div>
   )
