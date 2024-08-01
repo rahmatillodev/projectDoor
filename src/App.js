@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Home from "./pages/Home/Home";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
@@ -7,8 +7,13 @@ import Delivery from "./pages/Delivery/Delivery";
 import Katalog from "./pages/Katalog/Katalog";
 import Pay from "./pages/Pay/Pay";
 import Contact from "./pages/Contact/Contact";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const App = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
   return (
     <div>
       <BrowserRouter>
@@ -27,3 +32,4 @@ const App = () => {
 };
 
 export default App;
+

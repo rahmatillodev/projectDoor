@@ -18,7 +18,7 @@ const Navbar = () => {
     setLangText(text)
   };
   return (
-    <nav>
+    <nav data-aos="fade-down" data-aos-duration="2000">
       <div className="nav">
         <div className="navImage">
         <Link to="/">

@@ -7,10 +7,10 @@ import "swiper/css/navigation";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper/modules";
 import { FaStar } from "react-icons/fa";
-import { FaRegStar } from "react-icons/fa6";
+import { FaArrowLeftLong, FaArrowRightLong, FaRegStar } from "react-icons/fa6";
 import { useTranslation } from "react-i18next";
 const Testimonial = () => {
-  const {t} = useTranslation()
+  const { t } = useTranslation();
   let array = [
     {
       bgImg: image,
@@ -50,13 +50,17 @@ const Testimonial = () => {
   ];
   return (
     <div className="testimonial">
-      <p>{t('testimonial.testimonialTitle')}</p>
-      <h1>{t('testimonial.testimonialDesc')}</h1>
+      <p>{t("testimonial.testimonialTitle")}</p>
+      <h1>{t("testimonial.testimonialDesc")}</h1>
       <Swiper
+        slidesPerView={3}
         spaceBetween={30}
-        navigation={true}
         loop={true}
         modules={[Navigation, Autoplay]}
+        navigation={{
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        }}
         breakpoints={{
           600: {
             slidesPerView: 1,
@@ -74,8 +78,9 @@ const Testimonial = () => {
         }}
         className="testimonialCards"
       >
-        {array.map((element,index) => (
-          <SwiperSlide key={index}
+        {array.map((element, index) => (
+          <SwiperSlide
+            key={index}
             className="testimonialCard"
             style={{ background: `center/cover url(${element.bgImg})` }}
           >
@@ -96,6 +101,13 @@ const Testimonial = () => {
             </div>
           </SwiperSlide>
         ))}
+        <div className="swiper-button-prev">
+          <FaArrowLeftLong />
+        </div>
+        <div className="swiper-button-next">
+          <FaArrowRightLong />
+        </div>
+        1
       </Swiper>
     </div>
   );
