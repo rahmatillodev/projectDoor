@@ -30,7 +30,7 @@ const Navbar = () => {
   window.addEventListener("scroll", scrollDown);
 
   return (
-    <div className="navbar">
+    <div className="navbarWrapper">
       <div className={scrollPage}>
         <div className="navImage">
           <Link to="/">

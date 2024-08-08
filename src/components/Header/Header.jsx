@@ -9,8 +9,13 @@ import 'swiper/css/effect-fade';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { Autoplay, EffectFade } from 'swiper/modules';
+import { useState } from "react";
+import ModalMenu from "../Modal/Modal";
 
 const Header = () => {
+  const [show, setShow] = useState(false);
+
+  const handleShow = () => setShow(true);
   const { t } = useTranslation();
   return (
     <header>
@@ -39,7 +44,9 @@ const Header = () => {
             <img src={icon3} className="headerLeftIcon" alt="icon3" />
             <span>{t("header.guarantee")}</span>
           </p>
-          <button className="btn">{t('Buyurtma Berish')}</button>
+          <button onClick={handleShow} className="button">{t('Buyurtma Berish')}</button>
+          <ModalMenu handleShow={handleShow} setShow={setShow} show={show} />
+
         </div>
         <div className="headerRight">
           <Swiper className="headerCarousel"

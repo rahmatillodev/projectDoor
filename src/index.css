@@ -10,7 +10,7 @@
   outline: none;
   list-style: none;
 }
-.btn {
+.button {
   padding: 15px 20px;
   background: var(--color);
   color: white;
@@ -21,7 +21,7 @@
 svg {
   cursor: pointer;
 }
-a {
+div a {
   text-decoration: none;
 }
 .swiper .swiper-button-prev ,

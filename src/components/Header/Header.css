@@ -62,7 +62,7 @@ header {
 .headerLeft .headerLeftText:nth-child(4) {
   justify-content: end;
 }
-.header .btn {
+.header .button {
   margin-top: 40px;
   padding: 15px 40px;
   font-size: 20px;

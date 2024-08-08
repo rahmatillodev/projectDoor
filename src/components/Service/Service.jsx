@@ -4,8 +4,13 @@ import xIcon from "../../assets/x-octagon.svg"
 import form from "../../assets/form.png"
 import success from "../../assets/success.svg"
 import { useTranslation } from "react-i18next"
+import { useState } from "react"
+import ModalMenu from "../Modal/Modal"
 const Service = () => {
     const {t} = useTranslation()
+    const [show, setShow] = useState(false);
+
+    const handleShow = () => setShow(true);
   return (
     <div className="service">
         <div className="serviceTop">
@@ -35,8 +40,8 @@ const Service = () => {
                 <div data-aos="zoom-in"  data-aos-delay="500" className="serviceBottomCard">
                     <p>{t('service.guarantee')}</p>
                     <p>{t('service.freeService')}</p>
-                    <button>{t('service.order')}</button>
-                    <p></p>
+                    <button onClick={handleShow}>{t('service.order')}</button>
+                    <ModalMenu setShow={setShow} handleShow={handleShow} show={show} />
                 </div>
                 <img data-aos="zoom-in"  data-aos-delay="500" src={success} className="successImage" alt="success" />
             </div>
