@@ -75,7 +75,7 @@ const HomeCategory = () => {
         }}
         className="homeCategorySwipers"
       >
-        {data
+        {data ? data
           .filter((item) =>
             filterCategory === "all"
               ? item
@@ -101,7 +101,7 @@ const HomeCategory = () => {
                 <button>Batafsil</button>
               </div>
             </SwiperSlide>
-          ))}
+          )) : ""}
         <div className="swiper-button-prev">
           <FaArrowLeftLong />
         </div>

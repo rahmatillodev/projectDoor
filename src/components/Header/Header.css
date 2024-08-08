@@ -1,5 +1,5 @@
 header {
-  height: calc(100vh - 100px);
+  height:100vh;
   width: 100%;
   background:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.1)), center/cover url("../../assets/bg.jpg");
   overflow-x: hidden;
@@ -82,6 +82,7 @@ header {
   header .header {
     flex-direction: column;
     gap: 50px;
+    padding-top: 70px;
   }
   .header .headerRight {
     width: 50%;
