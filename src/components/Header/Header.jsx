@@ -29,23 +29,10 @@ const Header = () => {
             <img src={icon3} className="headerLeftIcon" alt="icon3" />
             <span>{t("header.guarantee")}</span>
           </p>
+          <button className="btn">{t('Buyurtma Berish')}</button>
         </div>
         <div className="headerRight">
-          <div className="headerRightForm" data-aos="fade-left">
-            <h1>{t("header.free")}</h1>
-            <p>{t("header.fill")}</p>
-            <input
-              type="text"
-              className="headerRightName"
-              placeholder={t("header.inputName")}
-            />
-            <input
-              type="text"
-              className="headerRightNumber"
-              placeholder={t("header.inputNumber")}
-            />
-            <button className="btn">{t("header.dispatch")}</button>
-          </div>
+          <img src="https://picsum.photos/id/684/600/400" alt="" />
         </div>
       </div>
     </header>

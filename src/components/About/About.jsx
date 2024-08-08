@@ -4,6 +4,7 @@ import { FaInfinity } from "react-icons/fa6";
 const About = () => {
   const {t} = useTranslation()
   return (
+    <>
     <div className="about">
       <div className="aboutText">
         <div data-aos="fade-up" data-aos-duration="300">
@@ -30,6 +31,10 @@ const About = () => {
         </div>
       </div>
     </div>
+    <div className="video">
+    <iframe src="https://www.youtube.com/embed/rlhb4BHF6x8?si=PBneN6gqJQkppX2p&amp;controls=0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+    </div>
+    </>
   );
 };
 

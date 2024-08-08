@@ -31,6 +31,7 @@ const HomeCategory = () => {
   return (
     <div className="homeCategory">
       <h1>{t("homeCategory.weProduct")}</h1>
+      <div className="homeCategoryTop">
       <div className="homeCategoryButtons">
         <button
           className={filterCategory === "all" ? "active" : ""}
@@ -48,6 +49,7 @@ const HomeCategory = () => {
           </button>
         ))}
       </div>
+      </div>
       <Swiper
         spaceBetween={30}
         parallax={true}
@@ -63,14 +65,14 @@ const HomeCategory = () => {
           disableOnInteraction: false,
         }}
         breakpoints={{
-          500: {
-            slidesPerView: 1,
-          },
-          800: {
+          600: {
             slidesPerView: 2,
           },
-          1200: {
+          850: {
             slidesPerView: 3,
+          },
+          1200: {
+            slidesPerView: 4,
           },
         }}
         className="homeCategorySwipers"
