@@ -12,19 +12,18 @@ import { CgClose } from "react-icons/cg";
 
 const Navbar = () => {
   const { t, i18n } = useTranslation();
-  const [langText, setLangText] = useState("Kz");
-  const [scrollPage, setscrollPage] = useState(0);
+  const [scrollPage, setscrollPage] = useState("nav");
   const [mediaModal, setMediaModal] = useState(true)
 
-  const changeLanguage = (lng, text) => {
+  const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
     // setLangText(text);
   };
   function scrollDown() {
-    if (window.scrollY > 100) {
-      setscrollPage("scroll");
+    if (window.scrollY > 200) {
+      setscrollPage("nav scroll");
     } else {
-      setscrollPage("");
+      setscrollPage("nav");
     }
   }
 
@@ -32,7 +31,7 @@ const Navbar = () => {
 
   return (
     <div className="navbar">
-      <div className="nav">
+      <div className={scrollPage}>
         <div className="navImage">
           <Link to="/">
             <img src={logo} alt="logo" />
@@ -62,21 +61,21 @@ const Navbar = () => {
           </div>
           <div className="languages">
             <div className="nowFlag">
-            <img src={FlagUzb} alt="language" />
-            <span>{langText}</span>
+            <img src={FlagKz} alt="language" />
+            <span>KZ</span>
             </div>
             <div className="another">
               <div className="language" onClick={()=>changeLanguage("uz")}>
                 <img src={FlagUzb} alt="language" />
-                <span>{langText}</span>
+                <span>UZ</span>
               </div>
               <div className="language" onClick={()=>changeLanguage("ru")} >
                 <img src={FlagRus} alt="language" />
-                <span>{langText}</span>
+                <span>RU</span>
               </div>
               <div className="language" onClick={()=>changeLanguage("kz")} >
                 <img src={FlagKz} alt="language" />
-                <span>{langText}</span>
+                <span>KZ</span>
               </div>
             </div>
           </div>
