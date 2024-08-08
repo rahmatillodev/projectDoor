@@ -51,7 +51,7 @@ const HomeCategory = () => {
       </div>
       </div>
       <Swiper
-        spaceBetween={30}
+        spaceBetween={20}
         parallax={true}
         mousewheel={true}
         loop={data.length > 4 ? true : false}

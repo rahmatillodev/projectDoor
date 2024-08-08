@@ -22,6 +22,7 @@ header {
   background: var(--color);
   left: -50px;
   top: 100px;
+  border-radius: 5px;
 }
 .headerLeftTitle h3 {
   color: var(--color);
@@ -70,10 +71,12 @@ header {
 .headerRight {
   width: 40%;
 }
-.headerRight img {
+
+.headerRight .headerCarousel {
   width: 100%;
-  object-fit: cover;
 }
+
+
 
 @media screen and (max-width:1100px) {
   header { 

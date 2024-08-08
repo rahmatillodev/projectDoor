@@ -32,7 +32,7 @@ const About = () => {
       </div>
     </div>
     <div className="video">
-    <iframe src="https://www.youtube.com/embed/rlhb4BHF6x8?si=PBneN6gqJQkppX2p&amp;controls=0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+    <iframe src="https://www.youtube.com/embed/rlhb4BHF6x8?si=gdjCirPaxf2ix_3K" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
     </div>
     </>
   );

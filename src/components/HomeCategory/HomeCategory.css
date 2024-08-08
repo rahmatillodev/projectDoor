@@ -124,6 +124,9 @@
     height: 100%;
     overflow-x: scroll;
   }
+  .homeCategoryTop::-webkit-scrollbar {
+    width: 0px;
+  }
   .homeCategoryButtons {
     width: 500px;
     border-radius: 0px;
