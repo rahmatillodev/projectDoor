@@ -8,7 +8,7 @@ i18n
 // .use(LanguageDetector) // Brauzer tilini aniqlash uchun
 .use(initReactI18next) // React uchun i18next
 .init({
-  fallbackLng: 'uz',
+  fallbackLng: 'kz',
   debug: true,
   interpolation: {
     escapeValue: false, // React uchun xos

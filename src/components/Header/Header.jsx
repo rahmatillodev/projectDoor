@@ -10,11 +10,14 @@ const Header = () => {
       <div className="header">
         <div className="headerLeft" data-aos="fade-right">
           <div className="headerLeftTitle">
+            <h3>Decorate Home</h3>
             <h1>
+              <i>
               {t("header.quality")}
               <p>
                 <span> {t("header.mdf")}</span> {t("header.doors")}
               </p>
+              </i>
             </h1>
           </div>
           <p className="headerLeftText">
