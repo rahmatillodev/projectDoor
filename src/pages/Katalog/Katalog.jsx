@@ -35,7 +35,7 @@ const Katalog = () => {
           </div>
           </div>
           <div className="katalogCards">
-            {data.filter(item => item.category.includes(filterCategory) ).map((item) => (
+            {data.filter(item => item.category === filterCategory ? item : '' ).map((item) => (
               <div className="katalogCard">
                 <div className="katalogCardImage">
                   <img src={item.image} alt="" />

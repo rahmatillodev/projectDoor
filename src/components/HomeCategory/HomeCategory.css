@@ -17,7 +17,7 @@
 }
 .homeCategoryButtons button {
   border: none;
-  padding: 10px;
+  padding: 10px 15px;
   border-radius: 20px;
   transition: 0.3s;
   text-transform: capitalize;
