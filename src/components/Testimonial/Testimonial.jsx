@@ -106,7 +106,7 @@ const Testimonial = () => {
         <div className="swiper-button-next">
           <FaArrowRightLong />
         </div>
-        1
+        
       </Swiper>
     </div>
   );
