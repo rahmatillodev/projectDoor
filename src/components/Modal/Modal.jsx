@@ -2,14 +2,14 @@ import { useState } from 'react';
 import { Form } from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
-
-function ModalMenu({setShow , show , handleShow}) {
+import "./Modal.css"
+function ModalMenu({setShow , show}) {
 
   
   const handleClose = () => setShow(false);
   return (
     <>
-      <Modal show={show} onHide={handleClose}>
+      <Modal className='modalMenu' show={show} onHide={handleClose}>
         {/* <Modal.Header closeButton>
           <Modal.Title>Modal heading</Modal.Title>
         </Modal.Header>
@@ -24,7 +24,7 @@ function ModalMenu({setShow , show , handleShow}) {
         </Modal.Footer> */}
         <Modal.Header closeButton style={{border:"none"}}>
         </Modal.Header>
-        <div className="modalTitle" >
+        <div className="modalTitle">
           <h3>Batafsil ma’lumot olish uchun
           formani to’ldiring</h3>
           <p>Siz bilan menejerlarimiz tez orada bog’lanib,

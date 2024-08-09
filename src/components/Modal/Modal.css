@@ -1,0 +1,28 @@
+.modalTitle  {
+    padding: 20px 50px ;
+}
+
+.modalBody {
+    padding: 0px 50px 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.modalBody label {
+    font-weight: 600;
+    font-size: 20px;
+}
+.modalBody input {
+    padding: 15px 10px;
+    border: none;
+    background-color: #F1F1F1;
+    border-radius: 10px;
+}
+.modalBody button {
+    background: var(--color);
+    border: none;
+    padding: 15px 10px;
+    color: white;
+    border-radius: 10px;
+    margin-top: 20px;
+}

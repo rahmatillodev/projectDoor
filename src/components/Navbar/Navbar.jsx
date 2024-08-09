@@ -20,7 +20,7 @@ const Navbar = () => {
     // setLangText(text);
   };
   function scrollDown() {
-    if (window.scrollY > 200) {
+    if (window.scrollY > 100) {
       setscrollPage("nav scroll");
     } else {
       setscrollPage("nav");

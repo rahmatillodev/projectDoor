@@ -15,13 +15,13 @@ const App = () => {
     Aos.init({ duration: 1000 });
   }, []);
   return (
-    <div>
+    <div className="App">
       <BrowserRouter>
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/delivery" element={<Delivery />} />
-          <Route path="/katalog" element={<Katalog />} />
+          <Route path="/catalog" element={<Katalog />} />
           <Route path="/pay" element={<Pay />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
