@@ -4,6 +4,7 @@
 .katalog .katalogButton {
   display: flex;
   width: max-content;
+  justify-content: space-around;
   margin: 30px auto;
   gap: 40px;
   background: #eee;
@@ -16,6 +17,7 @@
   border-radius: 20px;
   transition: 0.3s;
   text-transform: capitalize;
+  background: transparent;
 }
 .katalogButton .active {
   background: white;
@@ -25,6 +27,7 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  gap: 10px;
   width: 90%;
   margin: 0px auto;
 }
@@ -43,7 +46,7 @@
   object-fit: contain;
   height: 100%;
   transform: translateY(-50px);
-  filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.2));
+  filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.2));
 }
 .katalogCard .katalogCardText {
   background: white;
@@ -52,7 +55,7 @@
   height: 220px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;   
+  justify-content: space-between;
   border-radius: 0px 0px 20px 20px;
 }
 .katalogCardText h2 {
@@ -66,25 +69,48 @@
   overflow: hidden;
 }
 .katalogStars {
-    display: flex;
-    gap: 10px;
+  display: flex;
+  gap: 10px;
 }
 .katalogStars svg {
-    color: #f6b76f;
+  color: #f6b76f;
   font-size: 20px;
 }
 .katalogCard button {
-    width: 100%;
-    height: 50px;
-    background: #eee;
-    border: none;
-    margin-top: 10px;
-    border-radius: 12px;
-    font-size: 18px;
-    font-weight: 600;
+  width: 100%;
+  height: 50px;
+  background: #eee;
+  border: none;
+  margin-top: 10px;
+  border-radius: 12px;
+  font-size: 18px;
+  font-weight: 600;
 }
-@media screen and (max-width:1100px) {
-    .katalogCards .katalogCard {
-        width: 300px;
-    }
+@media screen and (max-width: 1100px) {
+  .katalogCards .katalogCard {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .katalogCards .katalogCard {
+    margin: auto;
+    width: 80%;
+  }
+  .katalog .katalogButton {
+    gap: 5px;
+  }
+  .katalogButton button {
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .katalog .katalogButton {
+    width: 95%;
+    padding: 10px 5px;
+  }
+  .katalogButton button {
+    padding: 2px 5px;
+    font-size: 12px;
+  }
 }

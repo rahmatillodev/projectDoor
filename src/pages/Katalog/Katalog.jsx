@@ -22,7 +22,7 @@ const Katalog = ({data,buttons , filterCategory , setfilterCategory,firstFilter}
           </div>
           <div className="katalogCards">
             {data.filter(item =>filterCategory === "" ? item : item.category === filterCategory ? item : '' ).map((item) => (
-              <div className="katalogCard">
+              <div className="katalogCard" key={item.id}>
                 <div className="katalogCardImage">
                   <img src={item.image} alt="" />
                 </div>
