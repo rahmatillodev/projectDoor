@@ -179,6 +179,9 @@
     display: flex;
     font-size: 22px;
   }
+  .navLinks .dropDown .dropDownMenu{
+    display: none;
+  }
   .navLinks .dropDownElement {
     display: flex;
     position: static;

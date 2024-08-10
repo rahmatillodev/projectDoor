@@ -43,7 +43,7 @@ const Navbar = ({setFirstFilter}) => {
         </div>
         <div className={mediaModal ? "navLinks" : "navLinks show"}>
           <div className="dropDown">  
-            <NavLink onClick={handleLinkClick}>
+            <NavLink className="dropDownMenu">
               {t("navbar.katalog")} <FaChevronDown />{" "}
             </NavLink>
             <div className="dropDownElement">
