@@ -48,7 +48,10 @@ div a {
 img::selection {
   background: transparent;
 }
-
+.designSwiper {
+  width: 90%;
+  margin: 0px auto;
+}
 @media screen and (max-width: 1000px) {
   .swiper .swiper-button-prev,
   .swiper .swiper-button-next {

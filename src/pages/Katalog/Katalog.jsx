@@ -37,7 +37,7 @@ const Katalog = ({data,buttons , filterCategory , setfilterCategory,firstFilter}
                   <FaRegStar />
                   <FaRegStar />
                   </div>
-                  <Link to="/">
+                  <Link to={`/catalog/${item.id}`}>
                     <button>Batafsil</button>
                   </Link>
                 </div>

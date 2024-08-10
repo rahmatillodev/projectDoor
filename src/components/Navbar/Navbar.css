@@ -173,6 +173,7 @@
   }
   .navLinks .dropDown {
     flex-direction: column;
+    align-items: center;
   }
   .navLinks .dropDown a ,.navContact span , .navImage .bars {
     display: flex;

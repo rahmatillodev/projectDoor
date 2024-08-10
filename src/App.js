@@ -7,15 +7,15 @@ import Delivery from "./pages/Delivery/Delivery";
 import Katalog from "./pages/Katalog/Katalog";
 import Pay from "./pages/Pay/Pay";
 import Contact from "./pages/Contact/Contact";
+import Card from "./pages/Card/Card";
 import Aos from "aos";
 import "aos/dist/aos.css";
-
+import ScrollTop from "./ScrollTop.jsx";
 const App = () => {
   useEffect(() => {
     Aos.init({ duration: 1000 });
   }, []);
 
-  
   const [data, setData] = useState([]);
   const [filterCategory, setfilterCategory] = useState("");
 
@@ -30,18 +30,30 @@ const App = () => {
     new Set(data.map((category) => category.category))
   );
 
-
-  const [firstFilter, setFirstFilter] = useState(1)
+  const [firstFilter, setFirstFilter] = useState(1);
   return (
     <div className="App">
       <BrowserRouter>
         <Navbar setFirstFilter={setFirstFilter} />
+        <ScrollTop />
         <Routes>
-          <Route path="/" element={<Home  />} />
+          <Route path="/" element={<Home />} />
           <Route path="/delivery" element={<Delivery />} />
-          <Route path="/catalog" element={<Katalog firstFilter={firstFilter} buttons={buttons} data={data} setfilterCategory={setfilterCategory} filterCategory={filterCategory} />} />
+          <Route
+            path="/catalog"
+            element={
+              <Katalog
+                firstFilter={firstFilter}
+                buttons={buttons}
+                data={data}
+                setfilterCategory={setfilterCategory}
+                filterCategory={filterCategory}
+              />
+            }
+          />
           <Route path="/pay" element={<Pay />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/catalog/:id" element={<Card data={data} />} />
         </Routes>
         <Footer />
       </BrowserRouter>
@@ -50,4 +62,3 @@ const App = () => {
 };
 
 export default App;
-

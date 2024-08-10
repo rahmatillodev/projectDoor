@@ -32,30 +32,30 @@ const HomeCategory = () => {
     <div className="homeCategory">
       <h1>{t("homeCategory.weProduct")}</h1>
       <div className="homeCategoryTop">
-      <div className="homeCategoryButtons">
-        <button
-          className={filterCategory === "all" ? "active" : ""}
-          onClick={() => setfilterCategory("all")}
-        >
-          All
-        </button>
-        {buttons.map((button) => (
+        <div className="homeCategoryButtons">
           <button
-            className={filterCategory === button ? "active" : ""}
-            key={button}
-            onClick={() => setfilterCategory(button)}
+            className={filterCategory === "all" ? "active" : ""}
+            onClick={() => setfilterCategory("all")}
           >
-            {button}
+            All
           </button>
-        ))}
-      </div>
+          {buttons.map((button) => (
+            <button
+              className={filterCategory === button ? "active" : ""}
+              key={button}
+              onClick={() => setfilterCategory(button)}
+            >
+              {button}
+            </button>
+          ))}
+        </div>
       </div>
       <Swiper
         spaceBetween={20}
         parallax={true}
         mousewheel={true}
         loop={data.length > 4 ? true : false}
-        modules={[Navigation,Autoplay]}
+        modules={[Navigation, Autoplay]}
         navigation={{
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
@@ -77,37 +77,39 @@ const HomeCategory = () => {
         }}
         className="homeCategorySwipers"
       >
-        {data ? data
-          .filter((item) =>
-            filterCategory === "all"
-              ? item
-              : item.category === filterCategory
-              ? item
-              : null
-          )
-          .map((item) => (
-            <SwiperSlide key={item.id} className="homeCategorySwiper">
-              <div className="homeCategorySwiperImage">
-                <img src={item.image} alt="" />
-              </div>
-              <div className="homeCategorySwiperText">
-                <p>{item.category}</p>
-                <h2>{item.title}</h2>
-                <div className="homeCategorySwiperStar">
-                  <FaStar />
-                  <FaStar />
-                  <FaStar />
-                  <FaRegStar />
-                  <FaRegStar />
-                </div>
-                <button>Batafsil</button>
-              </div>
-            </SwiperSlide>
-          )) : ""}
+        {data
+          ? data
+              .filter((item) =>
+                filterCategory === "all"
+                  ? item
+                  : item.category === filterCategory
+                  ? item
+                  : null
+              )
+              .map((item) => (
+                <SwiperSlide key={item.id} className="homeCategorySwiper">
+                  <div className="homeCategorySwiperImage">
+                    <img src={item.image} alt="" />
+                  </div>
+                  <div className="homeCategorySwiperText">
+                    <p>{item.category}</p>
+                    <h2>{item.title}</h2>
+                    <div className="homeCategorySwiperStar">
+                      <FaStar />
+                      <FaStar />
+                      <FaStar />
+                      <FaRegStar />
+                      <FaRegStar />
+                    </div>
+                    <Link to={`/catalog/${item.id}`}>Batafsil</Link>
+                  </div>
+                </SwiperSlide>
+              ))
+          : ""}
         <div className="swiper-button-prev">
           <FaArrowLeftLong />
         </div>
-        <div className="swiper-button-next" >
+        <div className="swiper-button-next">
           <FaArrowRightLong />
         </div>
       </Swiper>
