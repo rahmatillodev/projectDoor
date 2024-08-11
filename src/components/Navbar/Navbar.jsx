@@ -68,17 +68,17 @@ const Navbar = ({setFirstFilter}) => {
             <span>KZ</span>
             </div>
             <div className="another">
-              <div className="language" onClick={() => {changeLanguage("uz"); handleLinkClick();}}>
-                <img src={FlagUzb} alt="language" />
-                <span>UZ</span>
+              <div className="language" onClick={() => {changeLanguage("kz"); handleLinkClick();}} >
+                <img src={FlagKz} alt="language" />
+                <span>KZ</span>
               </div>
               <div className="language" onClick={() => {changeLanguage("ru"); handleLinkClick();}} >
                 <img src={FlagRus} alt="language" />
                 <span>RU</span>
               </div>
-              <div className="language" onClick={() => {changeLanguage("kz"); handleLinkClick();}} >
-                <img src={FlagKz} alt="language" />
-                <span>KZ</span>
+              <div className="language" onClick={() => {changeLanguage("uz"); handleLinkClick();}}>
+                <img src={FlagUzb} alt="language" />
+                <span>UZ</span>
               </div>
             </div>
           </div>
