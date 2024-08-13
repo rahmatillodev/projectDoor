@@ -85,7 +85,7 @@ const Testimonial = () => {
           >
             <div className="testimonialCardText">
               <div className="testimonialCardImage">
-                <img src={element.img} alt="Profile Picture" />
+                <img src={element.img} alt="Profile" />
               </div>
               <h3>{element.title}</h3>
               <span>{element.who}</span>

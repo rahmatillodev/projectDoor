@@ -1,6 +1,4 @@
-import { useState } from 'react';
 import { Form } from 'react-bootstrap';
-import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import "./Modal.css"
 function ModalMenu({setShow , show}) {

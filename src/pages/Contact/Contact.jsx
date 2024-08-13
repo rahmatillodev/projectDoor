@@ -41,6 +41,7 @@ const Contact = () => {
         <div className="contactRight">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1330.126225874139!2d69.28103428287966!3d41.29062762173365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b1cea5722a7%3A0x5c72e0166ca42a43!2sKichik%20Xalqa%20Yo&#39;li%2C%20%D0%A2%D0%BEshkent%2C%20Toshkent%2C%20O%60zbekiston!5e0!3m2!1suz!2s!4v1722074001391!5m2!1suz!2s"
+            title="Contact Form" 
             allowFullScreen=""
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"

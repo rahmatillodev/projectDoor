@@ -19,15 +19,17 @@ const App = () => {
   const [data, setData] = useState([]);
   const [filterCategory, setfilterCategory] = useState("");
 
-  useEffect(() => {
-    fetch("https://fakestoreapi.com/products")
-      .then((res) => res.json())
-      .then((res) => {
-        setData(res);
-      });
+  useEffect(() => {    
+    fetch("https://onemed.uz/api/products?category__parent=DOOR", {
+       method: 'GET',
+      redirect: 'follow'
+    })
+      .then(response => response.json())
+      .then(result => setData(result))
+      .catch(error => console.log('error', error));
   }, [filterCategory]);
   const buttons = Array.from(
-    new Set(data.map((category) => category.category))
+    new Set(data.map((category) => category.category.parent))
   );
 
   const [firstFilter, setFirstFilter] = useState(1);
