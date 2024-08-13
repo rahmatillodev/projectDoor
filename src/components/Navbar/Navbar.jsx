@@ -14,9 +14,14 @@ const Navbar = ({setFirstFilter}) => {
   const { t, i18n } = useTranslation();
   const [scrollPage, setscrollPage] = useState("nav");
   const [mediaModal, setMediaModal] = useState(true)
+  const [textlng, setTextlng] = useState("KZ")
+  const [flag, setFlag] = useState(FlagKz)
 
-  const changeLanguage = (lng) => {
+
+  const changeLanguage = (lng,text,img) => {
     i18n.changeLanguage(lng);
+    setTextlng(text)
+    setFlag(img)
   };
   function scrollDown() {
     if (window.scrollY > 100) {
@@ -64,19 +69,19 @@ const Navbar = ({setFirstFilter}) => {
           </div>
           <div className="languages">
             <div className="nowFlag">
-            <img src={FlagKz} alt="language" />
-            <span>KZ</span>
+            <img src={flag} alt="language" />
+            <span>{textlng}</span>
             </div>
             <div className="another">
-              <div className="language" onClick={() => {changeLanguage("kz"); handleLinkClick();}} >
+              <div className="language" onClick={() => {changeLanguage("kz","KZ",FlagKz); handleLinkClick();}} >
                 <img src={FlagKz} alt="language" />
                 <span>KZ</span>
               </div>
-              <div className="language" onClick={() => {changeLanguage("ru"); handleLinkClick();}} >
+              <div className="language" onClick={() => {changeLanguage("ru","RU",FlagRus); handleLinkClick();}} >
                 <img src={FlagRus} alt="language" />
                 <span>RU</span>
               </div>
-              <div className="language" onClick={() => {changeLanguage("uz"); handleLinkClick();}}>
+              <div className="language" onClick={() => {changeLanguage("uz","UZ",FlagUzb); handleLinkClick();}}>
                 <img src={FlagUzb} alt="language" />
                 <span>UZ</span>
               </div>
