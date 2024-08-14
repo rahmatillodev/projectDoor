@@ -2,7 +2,7 @@ import { useTranslation } from "react-i18next"
 import "./Pay.css"
 
 const Pay = () => {
-  let {t}=useTranslation()
+  const [t] = useTranslation("global");
   return (
     <div className='pay'>
       <h1>{t("payPage.pay")}</h1>

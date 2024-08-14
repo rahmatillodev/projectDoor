@@ -11,26 +11,33 @@ import Card from "./pages/Card/Card";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import ScrollTop from "./ScrollTop.jsx";
+import { useTranslation } from "react-i18next";
 const App = () => {
   useEffect(() => {
     Aos.init({ duration: 1000 });
   }, []);
+  const [i18n] = useTranslation("global");
 
   const [data, setData] = useState([]);
   const [filterCategory, setfilterCategory] = useState("");
 
-  useEffect(() => {    
-    fetch("https://onemed.uz/api/products?category__parent=DOOR", {
-       method: 'GET',
+  useEffect(() => {
+    fetch("https://onemed.uz/api/products?category__parent", {
+      method: 'GET',
       redirect: 'follow'
     })
       .then(response => response.json())
       .then(result => setData(result))
       .catch(error => console.log('error', error));
-  }, [filterCategory]);
+  }, []);
   const buttons = Array.from(
-    new Set(data.map((category) => category.category.parent))
+    new Set(data.map((item) => item.category[`name_uz`]))
   );
+  console.log(data);
+
+
+
+
 
   const [firstFilter, setFirstFilter] = useState(1);
   return (

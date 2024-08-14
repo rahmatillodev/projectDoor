@@ -11,7 +11,8 @@ import { FiPhone } from "react-icons/fi";
 import { CgClose } from "react-icons/cg";
 
 const Navbar = ({setFirstFilter}) => {
-  const { t, i18n } = useTranslation();
+  const [t,i18n] = useTranslation("global");
+
   const [scrollPage, setscrollPage] = useState("nav");
   const [mediaModal, setMediaModal] = useState(true)
   const [textlng, setTextlng] = useState("KZ")
@@ -52,6 +53,7 @@ const Navbar = ({setFirstFilter}) => {
               {t("navbar.katalog")} <FaChevronDown />{" "}
             </NavLink>
             <div className="dropDownElement">
+              
               <Link onClick={() => {setFirstFilter(1); handleLinkClick();}} to="catalog">Zinalar</Link>
               <Link onClick={() => {setFirstFilter(2); handleLinkClick();}} to="catalog">Eshiklar</Link>
               <Link onClick={() => {setFirstFilter(3); handleLinkClick();}} to="catalog">Stullar</Link>

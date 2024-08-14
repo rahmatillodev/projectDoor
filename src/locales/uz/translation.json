@@ -48,6 +48,9 @@
         "address":"Manzil:",
         "addressLocation":"Toshkent shahri, Kichik Xalqa Yo`li ko`chasi, G-9a mavzesi, 21-a uy."
     },
+    "katalogPage":{
+        "read":"Batafsil"
+    },
     "about":{
         "year":"10 yil",
         "specialists":"Tajribaga ega mutaxasislar",
@@ -78,7 +81,12 @@
     },
     "homeCategory":{
         "weProduct":"Bizning Mahsulotlarimiz",
-        "fullView":"To'liq Ko'rish"
+        "fullView":"To'liq Ko'rish",
+        "all":"Barchasi",
+        "door":"Eshiklar",
+        "chair":"Stul",
+        "pot":"Qozonlar",
+        "stairs":"Zinapoyalar"
     },
     "example":{
         "products":"Mahsulotlar",

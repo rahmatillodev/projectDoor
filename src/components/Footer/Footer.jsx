@@ -4,7 +4,8 @@ import { FaFacebook } from "react-icons/fa6";
 import { BsInstagram, BsTwitter } from "react-icons/bs";
 import { useTranslation } from "react-i18next";
 const Footer = () => {
-  const { t } = useTranslation();
+  const [t] = useTranslation("global");
+
   return (
     <footer>
       <div className="footer">

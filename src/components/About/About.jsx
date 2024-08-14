@@ -2,7 +2,8 @@ import { useTranslation } from "react-i18next";
 import "./About.css";
 import { FaInfinity } from "react-icons/fa6";
 const About = () => {
-  const {t} = useTranslation()
+  const [t] = useTranslation("global");
+
   return (
     <>
     <div className="about">

@@ -10,7 +10,8 @@ import { FaStar } from "react-icons/fa";
 import { FaArrowLeftLong, FaArrowRightLong, FaRegStar } from "react-icons/fa6";
 import { useTranslation } from "react-i18next";
 const Testimonial = () => {
-  const { t } = useTranslation();
+  const [t] = useTranslation("global");
+
   let array = [
     {
       bgImg: image,

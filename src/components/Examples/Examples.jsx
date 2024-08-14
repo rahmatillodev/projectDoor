@@ -5,7 +5,8 @@ import example3 from "../../assets/example3.png"
 import "./Examples.css"
 import { useTranslation } from 'react-i18next'
 const Examples = () => {
-  const {t} = useTranslation()
+  const [t] = useTranslation("global");
+
   return (
     <div className='example'>
         <div className="exampleLeft" data-aos="zoom-in-right" data-aos-delay="500">

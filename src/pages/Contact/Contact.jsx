@@ -2,7 +2,8 @@ import React from "react";
 import "./Contact.css";
 import { useTranslation } from "react-i18next";
 const Contact = () => {
-  const {t} = useTranslation()
+  const [t] = useTranslation("global");
+
   return (
     <div className="contact">
       <h1>{t("contactPage.contact")}</h1>

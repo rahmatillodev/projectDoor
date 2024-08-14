@@ -7,7 +7,7 @@ import { useTranslation } from "react-i18next"
 import { useState } from "react"
 import ModalMenu from "../Modal/Modal"
 const Service = () => {
-    const {t} = useTranslation()
+    const [t] = useTranslation("global");
     const [show, setShow] = useState(false);
 
     const handleShow = () => setShow(true);

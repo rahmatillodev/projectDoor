@@ -33,14 +33,13 @@
 import "./Katalog.css";
 import { Link } from "react-router-dom";
 import { FaRegStar, FaStar } from "react-icons/fa6";
-import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 const Katalog = ({ data, buttons, filterCategory, setfilterCategory }) => {
-  const { t} = useTranslation();
+  const [t,i18n] = useTranslation("global");
 
- 
 
   console.log(data);
+  
   return (
     <>
       {data && (
@@ -65,9 +64,9 @@ const Katalog = ({ data, buttons, filterCategory, setfilterCategory }) => {
                   <img src={item.photo} alt="" />
                 </div>
                 <div className="katalogCardText">
-                  {/* <span>{firstFilter}</span> */}
-                  {/* <p>{item.category}</p> */}
-                  <h2>{t(item.name_uz)}</h2>
+                <p>{item.category.parent}</p>
+                  {/* <p>{item.category[`name_${i18n.language}`]}</p> */}
+                  <h2>{item[`name_${i18n.language}`]}</h2>
                   <div className="katalogStars">
                     <FaStar />
                     <FaStar />
@@ -76,7 +75,7 @@ const Katalog = ({ data, buttons, filterCategory, setfilterCategory }) => {
                     <FaRegStar />
                   </div>
                   <Link to={`/catalog/${item.id}`}>
-                    <button>Batafsil</button>
+                    <button>{t('katalogPage.read')}</button>
                   </Link>
                 </div>
               </div>

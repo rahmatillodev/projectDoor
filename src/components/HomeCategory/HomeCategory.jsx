@@ -11,6 +11,9 @@ import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 
 const HomeCategory = () => {
+  const [t,i18n] = useTranslation("global");
+
+
   const [data, setData] = useState([]);
   const [filterCategory, setfilterCategory] = useState("all");
 
@@ -19,39 +22,24 @@ const HomeCategory = () => {
       method: 'GET',
       redirect: 'follow'
     }
-    fetch("https://onemed.uz/api/categories?parent", requestOptions)
+    fetch("https://onemed.uz/api/products?category__parent", requestOptions)
       .then(response => response.json())
-      .then(result => console.log(result))
+      .then(result => setData(result))
       .catch(error => console.log('error', error));
   }, [])
 
-
-  const buttons = Array.from(
-    new Set(data.map((category) => category.category))
-  );
-
-  const { t } = useTranslation();
+  console.log(data);
 
   return (
     <div className="homeCategory">
       <h1>{t("homeCategory.weProduct")}</h1>
       <div className="homeCategoryTop">
         <div className="homeCategoryButtons">
-          <button
-            className={filterCategory === "all" ? "active" : ""}
-            onClick={() => setfilterCategory("all")}
-          >
-            All
-          </button>
-          {buttons.map((button) => (
-            <button
-              className={filterCategory === button ? "active" : ""}
-              key={button}
-              onClick={() => setfilterCategory(button)}
-            >
-              {button}
-            </button>
-          ))}
+          <button className={filterCategory === "all" ? "active" : ""} onClick={() => setfilterCategory("all")}> {t("homeCategory.all")}</button>
+          <button className={filterCategory === "door" ? "active" : ""} onClick={() => setfilterCategory("door")}> {t('homeCategory.door')}</button>
+          <button className={filterCategory === "chair" ? "active" : ""} onClick={() => setfilterCategory("chair")}> {t('homeCategory.chair')}</button>
+          <button className={filterCategory === "pot" ? "active" : ""} onClick={() => setfilterCategory("pot")}> {t('homeCategory.pot')}</button>
+          <button className={filterCategory === "stairs" ? "active" : ""} onClick={() => setfilterCategory("stairs")}> {t('homeCategory.stairs')}</button>
         </div>
       </div>
       <Swiper
@@ -83,21 +71,15 @@ const HomeCategory = () => {
       >
         {data.length > 0
           ? data
-            .filter((item) =>
-              filterCategory === "all"
-                ? item
-                : item.category === filterCategory
-                  ? item
-                  : null
-            )
+            .filter((item) => filterCategory === "all" ? item : item.category === filterCategory ? item : null)
             .map((item) => (
               <SwiperSlide key={item.id} className="homeCategorySwiper">
                 <div className="homeCategorySwiperImage">
-                  <img src={item.image} alt="" />
+                  <img src={item.photo} alt="" />
                 </div>
                 <div className="homeCategorySwiperText">
-                  <p>{item.category}</p>
-                  <h2>{item.title}</h2>
+                  <p>{item.category[`name_${i18n.language}`]}</p>
+                  <h2>{item[`name_${i18n.language}`]}</h2>
                   <div className="homeCategorySwiperStar">
                     <FaStar />
                     <FaStar />
@@ -120,7 +102,7 @@ const HomeCategory = () => {
 
       <div className="homeLinks">
         <p className="homeLink">
-          <Link to="katalog">{t("homeCategory.fullView")}</Link>{" "}
+          <Link to="katalog">{t("homeCategory.fullView")}</Link>
           <img src={linkRight} alt="linkRight" />
         </p>
       </div>

@@ -1,7 +1,9 @@
 import { Form } from 'react-bootstrap';
 import Modal from 'react-bootstrap/Modal';
 import "./Modal.css"
+import { useTranslation } from 'react-i18next';
 function ModalMenu({setShow , show}) {
+  const [t] = useTranslation("global");
 
   
   const handleClose = () => setShow(false);

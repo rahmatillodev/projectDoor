@@ -1,8 +1,10 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import "./Card.css"
+import { useTranslation } from "react-i18next";
 const Card = ({ data }) => {
   const { id } = useParams();
+  const [t,i18n] = useTranslation("global");
 
   const products = data.find((product) => product.id === parseInt(id));
   if (!products) {
@@ -13,13 +15,13 @@ const Card = ({ data }) => {
     <div className="detailCard">
       <div className="detailCardWrapper">
         <div className="detailCardImage">
-          <img src={products.image} alt="" />
+          <img src={products.photo} alt="" />
         </div>
        <div className="detailCardRight">
        <div className="detailCardText">
-          <h1>{products.title}</h1>
+          <h1>{products[`name_${i18n.language}`]}</h1>
           <p>
-            Kategoriya: <span>{products.category}</span>
+            Kategoriya: <span>{products.category[`name_${i18n.language}`]}</span>
           </p>
           <h3>
             Quyidagi formani to’ldiring. Tez orada siz bilan menejerlarimiz
@@ -35,7 +37,7 @@ const Card = ({ data }) => {
         </div>
         <div className="detailCardDesc">
           <span>Batafsil</span>
-          <h3>{products.description}</h3>
+          <h3>{products[`desc${i18n.language}`]} xozircha yo'q</h3>
         </div>
        </div>
       </div>

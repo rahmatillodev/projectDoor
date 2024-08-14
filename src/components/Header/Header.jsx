@@ -16,7 +16,8 @@ const Header = () => {
   const [show, setShow] = useState(false);
 
   const handleShow = () => setShow(true);
-  const { t } = useTranslation();
+  const [t] = useTranslation("global");
+
   return (
     <header>
       <div className="header">

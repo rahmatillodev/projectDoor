@@ -3,7 +3,8 @@ import car from "../../assets/car.png";
 import check from "../../assets/check.svg";
 import { useTranslation } from "react-i18next";
 const Delivery = () => {
-  const { t } = useTranslation();
+  const [t] = useTranslation("global");
+
   return (
     <div className="delivery">
       <h1>{t("deliveryPage.delivery")}</h1>

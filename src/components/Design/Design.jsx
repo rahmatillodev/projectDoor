@@ -2,7 +2,8 @@ import "./Design.css";
 import dots from "../../assets/dots.png";
 import { useTranslation } from "react-i18next";
 const Design = () => {
-  const {t} = useTranslation()
+  const [t] = useTranslation("global");
+
   return (
     <div className="design">
       <h1>{t("design.advantage")}</h1>
