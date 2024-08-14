@@ -19,7 +19,7 @@ const App = () => {
   const [i18n] = useTranslation("global");
 
   const [data, setData] = useState([]);
-  const [filterCategory, setfilterCategory] = useState("");
+  const [filterCategory, setfilterCategory] = useState("klassik");
 
   useEffect(() => {
     fetch("https://onemed.uz/api/products?category__parent", {
@@ -30,16 +30,13 @@ const App = () => {
       .then(result => setData(result))
       .catch(error => console.log('error', error));
   }, []);
-  const buttons = Array.from(
-    new Set(data.map((item) => item.category[`name_uz`]))
-  );
-  console.log(data);
+  const [firstFilter, setFirstFilter] = useState("stair");
 
+//   useEffect(() => {
+// const filteredData = data.filter(item => item.category.parent === firstFilter)
+//   }, [firstFilter])
+  
 
-
-
-
-  const [firstFilter, setFirstFilter] = useState(1);
   return (
     <div className="App">
       <BrowserRouter>
@@ -53,8 +50,7 @@ const App = () => {
             element={
               <Katalog
                 firstFilter={firstFilter}
-                buttons={buttons}
-                data={data}
+                data={data.filter(item => item.category.parent.toLowerCase() === firstFilter)}
                 setfilterCategory={setfilterCategory}
                 filterCategory={filterCategory}
               />

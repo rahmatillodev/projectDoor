@@ -28,7 +28,6 @@ const HomeCategory = () => {
       .catch(error => console.log('error', error));
   }, [])
 
-  console.log(data);
 
   return (
     <div className="homeCategory">
@@ -39,7 +38,7 @@ const HomeCategory = () => {
           <button className={filterCategory === "door" ? "active" : ""} onClick={() => setfilterCategory("door")}> {t('homeCategory.door')}</button>
           <button className={filterCategory === "chair" ? "active" : ""} onClick={() => setfilterCategory("chair")}> {t('homeCategory.chair')}</button>
           <button className={filterCategory === "pot" ? "active" : ""} onClick={() => setfilterCategory("pot")}> {t('homeCategory.pot')}</button>
-          <button className={filterCategory === "stairs" ? "active" : ""} onClick={() => setfilterCategory("stairs")}> {t('homeCategory.stairs')}</button>
+          <button className={filterCategory === "stair" ? "active" : ""} onClick={() => setfilterCategory("stair")}> {t('homeCategory.stairs')}</button>
         </div>
       </div>
       <Swiper
@@ -71,7 +70,7 @@ const HomeCategory = () => {
       >
         {data.length > 0
           ? data
-            .filter((item) => filterCategory === "all" ? item : item.category === filterCategory ? item : null)
+            .filter((item) => filterCategory === "all" ? item : item.category.parent.toLowerCase() === filterCategory ? item : null)
             .map((item) => (
               <SwiperSlide key={item.id} className="homeCategorySwiper">
                 <div className="homeCategorySwiperImage">
@@ -102,7 +101,7 @@ const HomeCategory = () => {
 
       <div className="homeLinks">
         <p className="homeLink">
-          <Link to="katalog">{t("homeCategory.fullView")}</Link>
+          <Link to="catalog">{t("homeCategory.fullView")}</Link>
           <img src={linkRight} alt="linkRight" />
         </p>
       </div>

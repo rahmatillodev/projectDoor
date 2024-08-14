@@ -53,11 +53,10 @@ const Navbar = ({setFirstFilter}) => {
               {t("navbar.katalog")} <FaChevronDown />{" "}
             </NavLink>
             <div className="dropDownElement">
-              
-              <Link onClick={() => {setFirstFilter(1); handleLinkClick();}} to="catalog">Zinalar</Link>
-              <Link onClick={() => {setFirstFilter(2); handleLinkClick();}} to="catalog">Eshiklar</Link>
-              <Link onClick={() => {setFirstFilter(3); handleLinkClick();}} to="catalog">Stullar</Link>
-              <Link onClick={() => {setFirstFilter(4); handleLinkClick();}} to="catalog">Qozonlar</Link>
+              <Link onClick={() => {setFirstFilter("stair"); handleLinkClick();}} to="catalog">Zinalar</Link>
+              <Link onClick={() => {setFirstFilter("door"); handleLinkClick();}} to="catalog">Eshiklar</Link>
+              <Link onClick={() => {setFirstFilter("chair"); handleLinkClick();}} to="catalog">Stullar</Link>
+              <Link onClick={() => {setFirstFilter("pot"); handleLinkClick();}} to="catalog">Qozonlar</Link>
             </div>
           </div>
           <NavLink to="delivery" onClick={handleLinkClick}>{t("navbar.delivery")}</NavLink>
