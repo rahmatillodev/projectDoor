@@ -1,13 +1,13 @@
 {
     "navbar":{
-        "topOrder":"Buyurtma asosida eshiklar ishlab chiqaruvchi kompaniya",
-        "telegramLink":"Bizga telegramda yozing",
-        "onlineCall":"Biz hozir ishlayabmiz, qo’ng’iroq qiling:",
-        "home":"Bosh sahifa",
         "katalog":"Katalog",
         "delivery":"Yetkazib berish va o'rnatish",
         "pay":"To'lov",
-        "contact":"Biz bilan bog'lanish"
+        "contact":"Biz bilan bog'lanish",
+        "door":"Eshiklar",
+        "chair":"Stullar",
+        "pot":"Qozonlar",
+        "stairs":"Zinapoyalar"
     },
     "header":{
         "quality":"premium sifatdagi",
@@ -16,11 +16,7 @@
         "StraightAway":"To’g’ridan to’g’ri ishlab chiqaruvchidan",
         "service":"1 yil bepul serviz ko’rsatamiz",
         "guarantee":"Sifatga 5 yillik kafolat beramiz",
-        "free":"O'lchovini bepul chiqarish uchun",
-        "fill":"Buyurtma uchun quyidagi formani to’ldiring",
-        "dispatch":"Jo'natish",
-        "inputName":"Ismingiz",
-        "inputNumber":"+998"
+        "order":"Buyurtma berish"
     },
     "payPage":{
         "pay":"To'lov"
@@ -49,18 +45,31 @@
         "addressLocation":"Toshkent shahri, Kichik Xalqa Yo`li ko`chasi, G-9a mavzesi, 21-a uy."
     },
     "katalogPage":{
+        "weProduct":"Bizning mahsulotlar",
         "read":"Batafsil",
         "classic":"Classic",
         "hitech":"Hi-Tech",
         "luxury":"Luxury",
         "premium":"Premium"
     },
+    "cardPage":{
+        "category":"Kategoriya:",
+        "form":"Quyidagi formani to'ldiring. Tez orada siz bilan menejerlarimiz bog'lanib, batafsil ma'lumot berishadi...",
+        "name":"Ismingiz",
+        "number":"+998",
+        "email":"Email",
+        "address":"Manzil",
+        "ship":"Jo'natish",
+        "detail":"Batafsil",
+        "showroom":"Shourumimizga kelib, so'zlarimizga ishonch hosil qilish!",
+        "workWithYou":"Siz bilan ishlashdan minnatdor bo’lamiz."
+    },
     "about":{
-        "year":"10 yil",
+        "year":"15 yil",
         "specialists":"Tajribaga ega mutaxasislar",
-        "projectNumber":"7 000 dan",
+        "projectNumber":"15 000 dan",
         "project":"Ortiq topshirilgan loyihalar",
-        "productNumber":"47 000 ta",
+        "productNumber":"1M ta",
         "product":"Ishlab chiqarilgan mahsulot",
         "infinity":"Cheksiz asortiment"
     },
@@ -90,7 +99,8 @@
         "door":"Eshiklar",
         "chair":"Stullar",
         "pot":"Qozonlar",
-        "stairs":"Zinapoyalar"
+        "stairs":"Zinapoyalar",
+        "detail":"Batafsil"
     },
     "example":{
         "products":"Mahsulotlar",
@@ -128,5 +138,14 @@
         "control":"7 bosqichli sifat nazoratidan o’tkazamiz",
         "stage":"Bosqich",
         "response":"Eng yaxshi xizmatni taqdim etamiz va juda tez javob beramiz."
+    },
+    "modal":{
+        "form":"Batafsil ma'lumot olish uchun formani to'ldiring",
+        "contact":"Siz bilan menejerlarimiz tez orada bog'lanib, savollaringizga javob berishadi",
+        "name":"F.I.SH:",
+        "namePlaceholder":"FISH:",
+        "number":"Telefon Raqam",
+        "numberPlaceholder":"+998",
+        "detail":"Jo'natish"
     }
 }

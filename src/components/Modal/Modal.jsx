@@ -48,33 +48,31 @@ function ModalMenu({setShow , show}) {
         <Modal.Header closeButton style={{border:"none"}}>
         </Modal.Header>
         <div className="modalTitle">
-          <h3>Batafsil ma'lumot olish uchun
-          formani to'ldiring</h3>
-          <p>Siz bilan menejerlarimiz tez orada bog'lanib,
-          savollaringizga javob berishadi</p>
+          <h3>{t('modal.form')}</h3>
+          <p>{t('modal.contact')}</p>
         </div>
         <Form className="modalBody" onSubmit={handleSubmit}>
           <label name="name">
-            F.I.SH:
+            {t('modal.name')}
           </label>
             <input 
               type="text" 
-              placeholder='FISH:' 
+              placeholder={t('modal.namePlaceholder')} 
               value={fullName}
               onChange={(e) => setFullName(e.target.value)}
               required
             />
             <label name="tel">
-              Telefon Raqam
+              {t('modal.number')}
             </label>
             <input 
               type="tel" 
-              placeholder='+998 --- -- --'
+              placeholder={t('modal.numberPlaceholder')+" --- -- --"}
               value={phone}
               required
               onChange={(e) => setPhone(e.target.value)}
             />
-            <button type="submit">Jo'natish</button>
+            <button type="submit">{t('modal.detail')}</button>
         </Form>
       </Modal>
     </>

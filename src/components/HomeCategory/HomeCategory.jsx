@@ -35,10 +35,10 @@ const HomeCategory = () => {
       <div className="homeCategoryTop">
         <div className="homeCategoryButtons">
           <button className={filterCategory === "all" ? "active" : ""} onClick={() => setfilterCategory("all")}> {t("homeCategory.all")}</button>
-          <button className={filterCategory === "door" ? "active" : ""} onClick={() => setfilterCategory("door")}> {t('homeCategory.door')}</button>
-          <button className={filterCategory === "chair" ? "active" : ""} onClick={() => setfilterCategory("chair")}> {t('homeCategory.chair')}</button>
-          <button className={filterCategory === "pot" ? "active" : ""} onClick={() => setfilterCategory("pot")}> {t('homeCategory.pot')}</button>
           <button className={filterCategory === "stair" ? "active" : ""} onClick={() => setfilterCategory("stair")}> {t('homeCategory.stairs')}</button>
+          <button className={filterCategory === "door" ? "active" : ""} onClick={() => setfilterCategory("door")}> {t('homeCategory.door')}</button>
+          <button className={filterCategory === "table" ? "active" : ""} onClick={() => setfilterCategory("table")}> {t('homeCategory.chair')}</button>
+          <button className={filterCategory === "cauldron" ? "active" : ""} onClick={() => setfilterCategory("cauldron")}> {t('homeCategory.pot')}</button>
         </div>
       </div>
       <Swiper
@@ -86,7 +86,7 @@ const HomeCategory = () => {
                     <FaRegStar />
                     <FaRegStar />
                   </div>
-                  <Link to={`/catalog/${item.id}`}>Batafsil</Link>
+                  <Link to={`/catalog/${item.id}`}>{t('homeCategory.detail')}</Link>
                 </div>
               </SwiperSlide>
             ))

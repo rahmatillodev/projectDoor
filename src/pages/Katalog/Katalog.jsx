@@ -12,6 +12,7 @@ const Katalog = ({ data, filterCategory, setfilterCategory }) => {
     <>
       {data && (
         <div className="katalog">
+          <h1>{t('katalogPage.weProduct')}</h1>
           <div className="katalogButtons">
             <div className="katalogButton">
               <button className={filterCategory === "klassik" ? "active" : ""} onClick={() => setfilterCategory("klassik")} >{t('katalogPage.classic')}</button>

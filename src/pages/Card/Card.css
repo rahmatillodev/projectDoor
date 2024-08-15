@@ -1,6 +1,9 @@
 .detailCard {
   padding: 100px 0px;
 }
+.detailCard > h1 {
+  text-align: center;
+}
 .detailCardWrapper {
   display: flex;
   width: 90%;

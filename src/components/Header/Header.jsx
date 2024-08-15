@@ -46,7 +46,7 @@ const Header = () => {
             <span>{t("header.guarantee")}</span>
           </p>
           <button onClick={handleShow} className="button">
-            {t("Buyurtma Berish")}
+            {t("header.order")}
           </button>
           <ModalMenu handleShow={handleShow} setShow={setShow} show={show} />
         </div>

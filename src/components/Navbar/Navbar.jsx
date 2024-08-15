@@ -50,13 +50,13 @@ const Navbar = ({setFirstFilter}) => {
         <div className={mediaModal ? "navLinks" : "navLinks show"}>
           <div className="dropDown">  
             <NavLink className="dropDownMenu">
-              {t("navbar.katalog")} <FaChevronDown />{" "}
+              {t("navbar.katalog")} <FaChevronDown />
             </NavLink>
             <div className="dropDownElement">
-              <Link onClick={() => {setFirstFilter("stair"); handleLinkClick();}} to="catalog">Zinalar</Link>
-              <Link onClick={() => {setFirstFilter("door"); handleLinkClick();}} to="catalog">Eshiklar</Link>
-              <Link onClick={() => {setFirstFilter("chair"); handleLinkClick();}} to="catalog">Stullar</Link>
-              <Link onClick={() => {setFirstFilter("pot"); handleLinkClick();}} to="catalog">Qozonlar</Link>
+              <Link onClick={() => {setFirstFilter("stair"); handleLinkClick();}} to="catalog">{t('navbar.stairs')}</Link>
+              <Link onClick={() => {setFirstFilter("door"); handleLinkClick();}} to="catalog">{t('navbar.door')}</Link>
+              <Link onClick={() => {setFirstFilter("table"); handleLinkClick();}} to="catalog">{t('navbar.chair')}</Link>
+              <Link onClick={() => {setFirstFilter("cauldron"); handleLinkClick();}} to="catalog">{t('navbar.pot')}</Link>
             </div>
           </div>
           <NavLink to="delivery" onClick={handleLinkClick}>{t("navbar.delivery")}</NavLink>

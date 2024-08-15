@@ -7,9 +7,9 @@ const Pay = () => {
     <div className='pay'>
       <h1>{t("payPage.pay")}</h1>
       <div className="payCards">
-        <div className="payCard"></div>
-        <div className="payCard"></div>
-        <div className="payCard"></div>
+        <div className="payCard">naqt</div>
+        <div className="payCard">click</div>
+        <div className="payCard">payme</div>
       </div>
     </div>
   )

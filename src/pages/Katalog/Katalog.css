@@ -1,6 +1,9 @@
 .katalog {
   padding: 100px 0px;
 }
+.katalog h1 {
+  text-align: center;
+}
 .katalog .katalogButton {
   display: flex;
   width: max-content;
@@ -26,7 +29,7 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   gap: 10px;
   width: 90%;
   margin: 0px auto;
