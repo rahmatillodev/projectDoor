@@ -72,7 +72,7 @@ function ModalMenu({setShow , show}) {
               required
               onChange={(e) => setPhone(e.target.value)}
             />
-            <button type="submit">{t('modal.detail')}</button>
+            <button type="submit" className='button'>{t('modal.detail')}</button>
         </Form>
       </Modal>
     </>

@@ -46,6 +46,11 @@
   justify-content: end;
   gap: 40px;
 }
+.navLinks > a:hover,
+.dropDown a:hover {
+  transform: scale(1.2);
+  color: var(--color);
+}
 .navLinks .dropDown {
   position: relative;
   display: flex;

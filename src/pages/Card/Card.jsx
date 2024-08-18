@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import "./Card.css";
 import { useTranslation } from "react-i18next";
+import Zoom from 'react-medium-image-zoom';
+import 'react-medium-image-zoom/dist/styles.css';
 
 const Card = ({ data }) => {
   const [fullName, setFullName] = useState("");
@@ -55,7 +57,9 @@ const Card = ({ data }) => {
     <div className="detailCard">
       <div className="detailCardWrapper">
         <div className="detailCardImage">
+          <Zoom>
           <img src={products.photo} alt="" />
+          </Zoom>
         </div>
         <div className="detailCardRight">
           <div className="detailCardText">

@@ -9,15 +9,23 @@
   box-sizing: border-box;
   outline: none;
   list-style: none;
+  transition: 0.3s;
 }
 
 .button {
   padding: 15px 20px;
   background: var(--color);
   color: white;
-  border: none;
   outline: none;
   border-radius: 10px;
+  border: 2px solid transparent;
+
+}
+.button:hover {
+  transform: scale(1.05);
+  background: white;
+  color: var(--color);
+  border: 2px solid var(--color);
 }
 svg {
   cursor: pointer;

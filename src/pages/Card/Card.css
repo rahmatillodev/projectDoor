@@ -4,6 +4,10 @@
 .detailCard > h1 {
   text-align: center;
 }
+[data-rmiz-modal-overlay="visible"] {
+  background-color: rgba(0, 0, 0, 0.9) !important; /* Rangni o'zgartirish uchun o'zingiz xohlagan qiymatni kiriting */
+}
+
 .detailCardWrapper {
   display: flex;
   width: 90%;
