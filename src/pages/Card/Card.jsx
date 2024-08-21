@@ -41,7 +41,7 @@ const Card = ({ data }) => {
       redirect: "follow",
     };
 
-    fetch("https://onemed.uz/api/form", requestOptions)
+    fetch("https://admin.f9group.kz/api/form", requestOptions)
       .then((response) => response.text())
       .then((result) => {
         console.log(result);

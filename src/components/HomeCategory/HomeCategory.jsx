@@ -22,7 +22,7 @@ const HomeCategory = () => {
       method: 'GET',
       redirect: 'follow'
     }
-    fetch("https://onemed.uz/api/products?category__parent", requestOptions)
+    fetch("https://admin.f9group.kz/api/products?category__parent", requestOptions)
       .then(response => response.json())
       .then(result => setData(result))
       .catch(error => console.log('error', error));

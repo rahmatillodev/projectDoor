@@ -22,7 +22,7 @@ const App = () => {
   const [filterCategory, setfilterCategory] = useState("klassik");
 
   useEffect(() => {
-    fetch("https://onemed.uz/api/products?category__parent", {
+    fetch("https://admin.f9group.kz/api/products?category__parent", {
       method: 'GET',
       redirect: 'follow'
     })
