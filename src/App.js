@@ -19,7 +19,7 @@ const App = () => {
   const [i18n] = useTranslation("global");
 
   const [data, setData] = useState([]);
-  const [filterCategory, setfilterCategory] = useState("klassik");
+  const [filterCategory, setfilterCategory] = useState("классикалык");
 
   useEffect(() => {
     fetch("https://admin.f9group.kz/api/products?category__parent", {

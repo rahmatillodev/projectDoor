@@ -48,7 +48,6 @@
 }
 .navLinks > a:hover,
 .dropDown a:hover {
-  transform: scale(1.2);
   color: var(--color);
 }
 .navLinks .dropDown {

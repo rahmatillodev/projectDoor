@@ -2,6 +2,9 @@ import "./Header.css";
 import icon1 from "../../assets/icon1.svg";
 import icon2 from "../../assets/icon2.svg";
 import icon3 from "../../assets/icon3.svg";
+import header1 from "../../assets/headerCarousel1.jpg"
+import header2 from "../../assets/headerCarousel2.jpg"
+import header3 from "../../assets/headerCarousel3.png"
 import { useTranslation } from "react-i18next";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -62,19 +65,13 @@ const Header = () => {
             modules={[EffectFade, Autoplay]}
           >
             <SwiperSlide>
-              <img src="https://picsum.photos/id/684/600/400" alt="" />
+              <img src={header1} alt={header1} />
             </SwiperSlide>
             <SwiperSlide>
-              <img src="https://picsum.photos/id/466/600/400" alt="" />
+              <img src={header2} alt={header2} />
             </SwiperSlide>
             <SwiperSlide>
-              <img src="https://picsum.photos/id/543/600/400" alt="" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src="https://picsum.photos/id/443/600/400" alt="" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src="https://picsum.photos/id/997/600/400" alt="" />
+              <img src={header3} alt={header3} />
             </SwiperSlide>
           </Swiper>
         </div>

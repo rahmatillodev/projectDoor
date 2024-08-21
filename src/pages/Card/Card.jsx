@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import "./Card.css";
 import { useTranslation } from "react-i18next";
-import Zoom from 'react-medium-image-zoom';
-import 'react-medium-image-zoom/dist/styles.css';
+import Zoom from "react-medium-image-zoom";
+import "react-medium-image-zoom/dist/styles.css";
 
 const Card = ({ data }) => {
   const [fullName, setFullName] = useState("");
@@ -58,45 +58,43 @@ const Card = ({ data }) => {
       <div className="detailCardWrapper">
         <div className="detailCardImage">
           <Zoom>
-          <img src={products.photo} alt="" />
+            <img src={products.photo} alt="" />
           </Zoom>
         </div>
         <div className="detailCardRight">
           <div className="detailCardText">
             <h1>{products[`name_${i18n.language}`]}</h1>
             <p>
-              {t('cardPage.category')}
+              {t("cardPage.category")}
               <span>{products.category[`name_${i18n.language}`]}</span>
             </p>
-            <h3>
-              {t('cardPage.form')}
-                          </h3>
+            <h3>{t("cardPage.form")}</h3>
           </div>
           <form onSubmit={handleSubmit} className="detailCardForm">
             <input
               type="text"
-              placeholder={t('cardPage.name')}
+              placeholder={t("cardPage.name")}
               value={fullName}
               required
               onChange={(e) => setFullName(e.target.value)}
             />
             <input
               type="text"
-              placeholder={t('cardPage.number')}
+              placeholder={t("cardPage.number")}
               value={phone}
               required
               onChange={(e) => setPhone(e.target.value)}
             />
             <input
               type="text"
-              placeholder={t('cardPage.email')}
+              placeholder={t("cardPage.email")}
               value={email}
               required
               onChange={(e) => setEmail(e.target.value)}
             />
             <input
               type="text"
-              placeholder={t('cardPage.address')}
+              placeholder={t("cardPage.address")}
               value={address}
               required
               onChange={(e) => setAddress(e.target.value)}
@@ -110,17 +108,16 @@ const Card = ({ data }) => {
                 }
               }}
             >
-              {t('cardPage.ship')}
+              {t("cardPage.ship")}
             </button>
           </form>
           <div className="detailCardDesc">
-            <span>{t('cardPage.detail')}</span>
             <h3>{products[`desc${i18n.language}`]}</h3>
           </div>
         </div>
       </div>
-      <h2>{t('cardPage.showroom')}</h2>
-      <h5>{t('cardPage.workWithYou')}</h5>
+      <h2>{t("cardPage.showroom")}</h2>
+      <h5>{t("cardPage.workWithYou")}</h5>
     </div>
   );
 };

@@ -84,7 +84,13 @@ header {
   width: 80%;
   height: 100%;
   object-fit: cover;
+  box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.4);
+  transform: scale(0.97);
 }
+.headerCarousel .swiper-slide{
+  background: white;
+}
+
 @media screen and (max-width:1100px) {
   header { 
     height: auto;

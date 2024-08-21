@@ -19,7 +19,8 @@ const Home = () => {
       <Examples />
       <Testimonial />
       <Service />
-      <Swiper className="designSwiper"
+      <Swiper
+        className="designSwiper"
         loop={true}
         navigation={{
           nextEl: ".swiper-button-next",
@@ -30,8 +31,6 @@ const Home = () => {
         }}
         modules={[Navigation, Autoplay]}
       >
-
-
         <SwiperSlide>
           <Design />
         </SwiperSlide>

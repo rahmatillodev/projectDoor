@@ -57,6 +57,8 @@ const Navbar = ({setFirstFilter}) => {
               <Link onClick={() => {setFirstFilter("door"); handleLinkClick();}} to="catalog">{t('navbar.door')}</Link>
               <Link onClick={() => {setFirstFilter("table"); handleLinkClick();}} to="catalog">{t('navbar.chair')}</Link>
               <Link onClick={() => {setFirstFilter("cauldron"); handleLinkClick();}} to="catalog">{t('navbar.pot')}</Link>
+              <Link onClick={() => {setFirstFilter(""); handleLinkClick();}} to="catalog">Pol fabrika</Link>
+
             </div>
           </div>
           <NavLink to="delivery" onClick={handleLinkClick}>{t("navbar.delivery")}</NavLink>
@@ -66,7 +68,7 @@ const Navbar = ({setFirstFilter}) => {
             <span>
               <FiPhone />
             </span>
-            <span>+998 90 010-85-10</span>
+            <a href="tel:+998900108510">+998 90 010-85-10</a>
           </div>
           <div className="languages">
             <div className="nowFlag">

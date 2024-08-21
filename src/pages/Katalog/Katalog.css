@@ -4,6 +4,9 @@
 .katalog h1 {
   text-align: center;
 }
+.katalog .not {
+  text-align: center;
+}
 .katalog .katalogButton {
   display: flex;
   width: max-content;

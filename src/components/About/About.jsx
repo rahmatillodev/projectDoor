@@ -1,6 +1,5 @@
 import { useTranslation } from "react-i18next";
 import "./About.css";
-import { FaInfinity } from "react-icons/fa6";
 const About = () => {
   const [t] = useTranslation("global");
 
@@ -27,7 +26,7 @@ const About = () => {
       </div>
       <div className="aboutText">
         <div  data-aos="fade-up" data-aos-duration="1200" >
-        <h1><FaInfinity /> </h1>
+        <h1>1000 + </h1>
         <p>{t('about.infinity')}</p>
         </div>
       </div>
