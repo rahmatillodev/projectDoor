@@ -7,6 +7,7 @@
         "door":"Eshiklar",
         "chair":"Stullar",
         "pot":"Qozonlar",
+        "pol":"Pol fabrika",
         "stairs":"Zinapoyalar"
     },
     "header":{
@@ -98,6 +99,7 @@
         "door":"Eshiklar",
         "chair":"Stullar",
         "pot":"Qozonlar",
+        "pol":"Pol fabrika",
         "stairs":"Zinapoyalar",
         "detail":"Batafsil"
     },

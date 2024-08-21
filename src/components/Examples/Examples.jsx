@@ -1,6 +1,6 @@
 import React from 'react'
 import example1 from "../../assets/example1.png"
-import example2 from "../../assets/example2.png"
+import example2 from "../../assets/example2.svg"
 import example3 from "../../assets/example3.png"
 import "./Examples.css"
 import { useTranslation } from 'react-i18next'
@@ -18,10 +18,10 @@ const Examples = () => {
         </div>
         <div className="exampleRight">
             <div>
-            <img src={example3}  data-aos="zoom-in"  data-aos-delay="500" alt="example3" />
+            <img src={example2}  data-aos="zoom-in"  data-aos-delay="900" alt="example2" />
             <img src={example1}  data-aos="zoom-in"  data-aos-delay="700" alt="example1" />
             </div>
-            <img src={example2}  data-aos="zoom-in"  data-aos-delay="900" alt="example2" />
+            <img src={example3}  data-aos="zoom-in"  data-aos-delay="500" alt="example3" />
         </div>
     </div>
   )

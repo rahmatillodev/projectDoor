@@ -57,7 +57,7 @@ const Navbar = ({setFirstFilter}) => {
               <Link onClick={() => {setFirstFilter("door"); handleLinkClick();}} to="catalog">{t('navbar.door')}</Link>
               <Link onClick={() => {setFirstFilter("table"); handleLinkClick();}} to="catalog">{t('navbar.chair')}</Link>
               <Link onClick={() => {setFirstFilter("cauldron"); handleLinkClick();}} to="catalog">{t('navbar.pot')}</Link>
-              <Link onClick={() => {setFirstFilter(""); handleLinkClick();}} to="catalog">Pol fabrika</Link>
+              <Link onClick={() => {setFirstFilter("floor"); handleLinkClick();}} to="catalog">{t('navbar.pol')}</Link>
 
             </div>
           </div>

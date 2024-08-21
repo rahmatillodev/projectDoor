@@ -39,7 +39,7 @@ const HomeCategory = () => {
           <button className={filterCategory === "door" ? "active" : ""} onClick={() => setfilterCategory("door")}> {t('homeCategory.door')}</button>
           <button className={filterCategory === "table" ? "active" : ""} onClick={() => setfilterCategory("table")}> {t('homeCategory.chair')}</button>
           <button className={filterCategory === "cauldron" ? "active" : ""} onClick={() => setfilterCategory("cauldron")}> {t('homeCategory.pot')}</button>
-          <button className={filterCategory === "" ? "active" : ""} onClick={() => setfilterCategory("")}>Pol fabrika</button>
+          <button className={filterCategory === "floor" ? "active" : ""} onClick={() => setfilterCategory("floor")}>{t('homeCategory.pol')}</button>
         </div>
       </div>
       <Swiper
