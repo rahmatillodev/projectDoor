@@ -1,5 +1,6 @@
 footer {
   background: #f7f7f7;
+  padding-top: 100px;
 }
 .footer {
   display: grid;
@@ -7,7 +8,6 @@ footer {
   height: 70%;
   width: 80%;
   margin: 0px auto;
-  padding-top: 100px;
   gap: 50px;
 }
 .footer div a {
@@ -46,18 +46,31 @@ footer {
 }
 
 @media screen and (max-width: 550px) {
+  footer {
+    padding-top: 30px;
+    padding-bottom: 0px;
+  }
   .footer {
     grid-template-columns: auto;
+    gap: 15px;
+  }
+  .footer p {
+    font-size: 14px;
+  }
+  .footer div a {
+    font-size: 14px;
+    padding-bottom: 8px;
   }
   .footerBottom {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 20px;
-    width: 90%;
+    gap: 0px;
+    width: 80%;
+    padding: 15px 0px;
   }
 
   .footerBottom .footerBottomRight {
     gap: 0px;
-    justify-content: space-between;
+    flex-direction: column;
   }
 }

@@ -1,5 +1,5 @@
 import React from 'react'
-import example1 from "../../assets/example1.png"
+import example1 from "../../assets/example1.jpg"
 import example2 from "../../assets/example2.svg"
 import example3 from "../../assets/example3.png"
 import "./Examples.css"

@@ -57,7 +57,7 @@ img::selection {
   background: transparent;
 }
 .designSwiper {
-  width: 90%;
+  width: 100%;
   margin: 0px auto;
 }
 @media screen and (max-width: 1000px) {

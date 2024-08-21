@@ -57,7 +57,7 @@ const HomeCategory = () => {
           disableOnInteraction: false,
         }}
         breakpoints={{
-          600: {
+          370: {
             slidesPerView: 2,
           },
           850: {

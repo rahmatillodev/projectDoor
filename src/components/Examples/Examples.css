@@ -1,91 +1,107 @@
 .example {
-    display: flex;
-    padding-top: 100px;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  padding-top: 100px;
+  align-items: center;
+  justify-content: space-between;
 }
 .exampleLeft {
-    width: 50%;
+  width: 50%;
 }
 .exampleLeft .exampleLeftText {
-    width: 70%;
-    margin: 0px auto;
+  width: 70%;
+  margin: 0px auto;
 }
 .exampleLeftText span {
-    color: var(--color);
-    font-size: 20px;
+  color: var(--color);
+  font-size: 20px;
 }
 .exampleLeftText h2 {
-    font-size: 42px;
-    line-height: 52px;
-    padding: 15px 0px;
-    word-spacing: 10px;
-    font-weight: 400;
+  font-size: 42px;
+  line-height: 52px;
+  padding: 15px 0px;
+  word-spacing: 10px;
+  font-weight: 400;
 }
 .exampleLeftText p {
-    line-height: 30px;
-    font-size: 18px;
+  line-height: 30px;
+  font-size: 18px;
 }
 .example img {
-    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.15);
-    border-radius: 20px;
-    width: 65%;
+  /* box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.15); */
+  border-radius: 20px;
+  width: 65%;
 }
 
 .exampleRight {
-    width: 48%;
-    display: flex;
-    align-items: end;
-    justify-content: space-between;
+  width: 48%;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
 }
 .exampleRight div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 50px;
-    justify-content: end;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  justify-content: end;
 }
-.exampleRight >img {
-    border-radius: 20px 0px 0px 20px;
+.exampleRight > img {
+  border-radius: 20px 0px 0px 20px;
 }
 
-@media screen  and (max-width:950px){
-    .exampleLeft .exampleLeftText {
-        width: 90%;
-    }
-    .exampleRight {
-        flex-direction: column;
-        gap: 10px;
-    }
-    .exampleRight div > img {
-        width: 45%;
-    }
-    .exampleRight > img {
-        width: 100%;
-    }
-    .exampleRight > div {
-        flex-direction: row;
-        justify-content: space-around;
-        gap: 0px;
-    }
+@media screen and (max-width: 950px) {
+  .exampleLeft  {
+    width: 90%;
+  }
+  .example .exampleRight {
+    flex-direction: column;
+    margin: auto;
+    gap: 10px;
+    width: 100%;
+  }
+  .exampleRight div > img {
+    width: 45%;
+  }
+  .exampleRight > img {
+    width: 100%;
+  }
+  .exampleRight > div {
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 0px;
+  }
 }
-@media screen  and (max-width:678px){
-    .example {
-        display: block;
-    }
-    .example > div {
-        width: 90%;
-    }
-    .exampleRight img {
-        width: 90%;
-        margin-top: 20px;
-        border-radius: 20px;
-    }
-    .exampleRight > div {
-        flex-direction: column;
-        width: 90%;
-    }
-    .exampleRight div > img {
-        width: 100%;
-    }
+@media screen and (max-width: 678px) {
+  .example {
+    display: block;
+    padding-top: 40px;
+  }
+  .example h2 {
+    font-size: 25px;
+    line-height: 120%;
+    font-weight: 600;
+  }
+  .example p {
+    font-size: 14px;
+    line-height: 120%;
+  }
+  .example > div {
+    width: 90%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+  }
+  .exampleRight img {
+    width: 90%;
+    margin-top: 20px;
+    border-radius: 20px;
+  }
+  .exampleRight > div {
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+  }
+  .exampleRight div > img {
+    width: 100%;
+  }
 }

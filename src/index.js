@@ -13,7 +13,7 @@ import global_ru from "./locales/ru/translation.json";
 
 i18next.init({
   interpolation: { escapeValue: false },
-  lng: "kz",
+  lng: "uz",
   resources: {
     uz: {
       global: global_uz,

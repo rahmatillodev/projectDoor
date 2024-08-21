@@ -15,8 +15,7 @@
 }
 .serviceTopImage img {
   width: 100%;
-  box-shadow: -10px 10px 30px 2px grey;
-  border-radius: 30px;
+  border-radius: 20px;
 }
 .serviceTop .serviceTopText {
   text-align: center;
@@ -148,8 +147,11 @@
     width: 90%;
     margin: 0px auto;
   }
+  .serviceTop .serviceTopText ul  {
+    gap: 15px;
+  }
   .serviceTop .serviceTopText ul li {
-    font-size: 15px;
+    font-size: 14px;
   }
   .serviceBottom .serviceBottomImages {
     flex-direction: column;
@@ -162,26 +164,54 @@
   }
 }
 @media screen and (max-width: 600px) {
+  .service .serviceTop {
+    flex-direction: column-reverse;
+  }
   .serviceTop .serviceTopText ul {
     grid-template-columns: 1fr;
   }
   .serviceTop .serviceTopText h2 {
     font-size: 25px;
-    line-height: 30px;
+    line-height: 120%;
+  }
+  .serviceTopImage img {
+    border-radius: 10px;
+  }
+  .serviceBottom {
+    padding-top: 50px;
+  }
+  .serviceBottom::before {
+    right: 0px;
+    top: 100px;
   }
   .serviceBottom h2 {
-    font-size: 22px;
+    font-size: 25px;
     width: 95%;
+    line-height: 120%;
+    font-weight: 500;
+  }
+  .serviceBottom .serviceBottomImages {
+    padding-top: 50px;
   }
   .serviceBottomImages .fromImage {
     order: 3;
     z-index: 1;
+    transform: translateY(-100px) !important;
   }
   
   .serviceBottomImages .serviceBottomCard {
     order: 2;
+    z-index: 3;
     width: 90%;
     margin: 0px auto;
+    transform: translateY(-30px) !important;
+  }
+  .serviceBottomImages .serviceBottomCard p {
+    font-size: 25px;
+    line-height: 120%;
+  }
+  .serviceBottomImages .serviceBottomCard button {
+    font-size: 14px;
   }
   
   .serviceBottomImages .successImage {

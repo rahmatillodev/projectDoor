@@ -41,7 +41,7 @@
   max-height: 80vh;
   position: relative;
   z-index: 2;
-  filter: drop-shadow(0px 0px 10px grey);
+  /* filter: drop-shadow(0px 0px 10px grey); */
 }
 .detailCardWrapper .detailCardRight {
   width: 50%;
