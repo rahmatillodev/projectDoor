@@ -5,7 +5,7 @@
   text-align: center;
 }
 [data-rmiz-modal-overlay="visible"] {
-  background-color: rgba(0, 0, 0, 0.9) !important; /* Rangni o'zgartirish uchun o'zingiz xohlagan qiymatni kiriting */
+  background-color: rgba(0, 0, 0, 0.9) !important;
 }
 
 .detailCardWrapper {
@@ -26,8 +26,6 @@
   content: "";
   width: 100%;
   left: 0%;
-  /* width: 120%;
-    left: -10%; */
   bottom: 0px;
   height: 70%;
   background: #f0f0f0;
@@ -38,10 +36,9 @@
   width: 100%;
   height: 100%;
   object-fit: contain;
-  max-height: 80vh;
+  max-height: 75vh;
   position: relative;
   z-index: 2;
-  /* filter: drop-shadow(0px 0px 10px grey); */
 }
 .detailCardWrapper .detailCardRight {
   width: 50%;
@@ -49,14 +46,14 @@
 .detailCardWrapper .detailCardRight .detailCardText h1 {
   font-size: 45px;
   font-weight: 400;
-  line-height: 56px;
+  line-height: 120%;
   letter-spacing: 0.04em;
 }
 
 .detailCardWrapper .detailCardRight .detailCardText p {
   font-size: 20px;
   font-weight: 600;
-  line-height: 24px;
+  line-height: 120%;
   letter-spacing: 0.04em;
   padding-top: 40px;
 }
@@ -66,7 +63,7 @@
 }
 .detailCardWrapper .detailCardRight .detailCardText h3 {
   font-size: 18px;
-  line-height: 21px;
+  line-height: 120%;
   font-weight: 400;
   letter-spacing: 0.04em;
   padding: 10px 0px;
@@ -104,13 +101,13 @@
 .detailCardRight .detailCardDesc h3 {
   font-size: 18px;
   font-weight: 400;
-  line-height: 35px;
+  line-height: 120%;
   padding: 10px 0px;
 }
 .detailCard h2 {
   font-size: 32px;
   font-weight: 400;
-  line-height: 38px;
+  line-height: 120%;
   letter-spacing: 0.04em;
   width: 80%;
   margin: 0px auto;
@@ -119,7 +116,7 @@
 .detailCard h5 {
   font-size: 20px;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 120%;
   letter-spacing: 0.04em;
   text-align: center;
   padding-top: 20px;
@@ -131,10 +128,17 @@
   }
 }
 @media screen and (max-width: 900px) {
+  .detailCardWrapper .detailCardImage {
+    height: 250px;
+  }
+  .detailCardWrapper .detailCardImage img {
+    height: 200px;
+  }
   .detailCard .detailCardWrapper {
     flex-direction: column;
     align-items: center;
   }
+
   .detailCardWrapper .detailCardImage {
     width: 90%;
   }
@@ -146,7 +150,51 @@
   }
 }
 @media screen and (max-width: 600px) {
-  .detailCardRight .detailCardForm {
+  .detailCardWrapper {
+    padding: 20px 0px 0px;
     width: 100%;
   }
+  .detailCardRight .detailCardForm {
+    width: 100%;
+    gap: 15px;
+    margin: 30px auto 0px;
+  }
+  .detailCardRight .detailCardForm input {
+    width: 100%;
+    border-radius: 8px;
+    padding: 13px 10px;
+  }
+  .detailCardRight .detailCardForm button {
+    padding: 13px 10px;
+  }
+  .detailCard {
+    padding: 70px 0px 30px;
+  }
+  .detailCardWrapper .detailCardRight .detailCardText h1 {
+    font-size: 25px;
+  }
+  .detailCardWrapper .detailCardRight .detailCardText p {
+    padding-top: 10px;
+    font-size: 16px;
+  }
+  .detailCardWrapper .detailCardRight .detailCardText span {
+    margin-left: 10px;
+  }
+
+  .detailCardRight .detailCardDesc h3 {
+    font-size: 10px;
+  }
+  .detailCardWrapper .detailCardRight .detailCardText h3 {
+    font-size: 14px;
+    padding: 0px;
+  }
+  .detailCard h2 {
+    font-size: 20px;
+  }
+  .detailCard h5 {
+    font-size: 14px;
+  }
+.detailCardRight .detailCardForm button {
+  margin-bottom: 0px;
+}
 }
