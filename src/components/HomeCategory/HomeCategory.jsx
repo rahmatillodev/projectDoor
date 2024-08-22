@@ -87,7 +87,7 @@ const HomeCategory = () => {
                     <FaRegStar />
                     <FaRegStar />
                   </div>
-                  <Link to={`/catalog/${item.id}`}>{t('homeCategory.detail')}</Link>
+                  <Link className="button" to={`/catalog/${item.id}`}>{t('homeCategory.detail')}</Link>
                 </div>
               </SwiperSlide>
             ))
@@ -102,7 +102,7 @@ const HomeCategory = () => {
 
       <div className="homeLinks">
         <p className="homeLink">
-          <Link to="catalog">{t("homeCategory.fullView")}</Link>
+          <Link  to="catalog">{t("homeCategory.fullView")}</Link>
           <img src={linkRight} alt="linkRight" />
         </p>
       </div>

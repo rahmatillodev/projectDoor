@@ -98,7 +98,7 @@
     padding: 100px 0px 30px;
   }
   .contactWrapper {
-    width: 95%;
+    width: 90%;
     gap: 15px;
   }
   .contactWrapper > div {
@@ -117,7 +117,7 @@
   }
   .contactLeftText p , .contactLeftText h3{
     font-size: 14px;
-   
+    line-height: 120%;
     width: max-content;
   }
 }

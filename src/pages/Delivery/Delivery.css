@@ -55,7 +55,7 @@
 
 @media screen and (max-width: 1024px) {
   .deliveryWrapper {
-    flex-direction: column-reverse;
+    flex-direction: column;
     gap: 30px;
   }
   .deliveryWrapper > div {
@@ -82,6 +82,7 @@
   }
   .delivery .deliveryText h2 {
     font-size: 16px;
+    line-height: 120%;
   }
   .deliveryWrapper .deliveryText li {
     font-size: 12px;
@@ -93,10 +94,12 @@
     padding: 0px;
   }
   .delivery h4 {
-    font-size: 22px;
+    font-size: 20px;
     padding: 20px 0px 5px;
+    line-height: 120%;
   }
   .delivery h5 {
-    font-size: 16px;
+    line-height: 120%;
+    font-size: 14px;
   }
 }

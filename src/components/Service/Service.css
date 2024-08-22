@@ -178,7 +178,7 @@
     border-radius: 10px;
   }
   .serviceBottom {
-    padding-top: 50px;
+    padding: 50px 0px 20px;
   }
   .serviceBottom::before {
     right: 0px;
@@ -197,6 +197,7 @@
     order: 3;
     z-index: 1;
     transform: translateY(-100px) !important;
+    display: none;
   }
   
   .serviceBottomImages .serviceBottomCard {
@@ -217,4 +218,7 @@
   .serviceBottomImages .successImage {
     order: 1;
   }
+.serviceBottom::after {
+  display: none;
+}
 }

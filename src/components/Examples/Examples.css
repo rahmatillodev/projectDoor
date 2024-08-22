@@ -50,7 +50,7 @@
 }
 
 @media screen and (max-width: 950px) {
-  .exampleLeft  {
+  .exampleLeft {
     width: 90%;
   }
   .example .exampleRight {
@@ -76,10 +76,15 @@
     display: block;
     padding-top: 40px;
   }
+  .example .exampleLeft span{
+    text-align: center;
+    display: block;
+  }
   .example h2 {
     font-size: 25px;
     line-height: 120%;
     font-weight: 600;
+    text-align: center;
   }
   .example p {
     font-size: 14px;
@@ -90,6 +95,13 @@
     margin: auto;
     align-items: center;
     justify-content: center;
+  }
+  .example .exampleLeft {
+    width: 100%;
+    margin: 0px;
+  }
+  .example .exampleLeft .exampleLeftText {
+    width: 90%;
   }
   .exampleRight img {
     width: 90%;

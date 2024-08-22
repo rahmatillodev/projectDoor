@@ -72,7 +72,7 @@ const Katalog = ({ data }) => {
                       <FaRegStar />
                     </div>
                     <Link to={`/catalog/${item.id}`}>
-                      <button>{t("katalogPage.read")}</button>
+                      <button className="button">{t("katalogPage.read")}</button>
                     </Link>
                   </div>
                 </div>
