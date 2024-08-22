@@ -19,7 +19,6 @@ const App = () => {
   const [i18n] = useTranslation("global");
 
   const [data, setData] = useState([]);
-  const [filterCategory, setfilterCategory] = useState("классикалык");
 
   useEffect(() => {
     fetch("https://admin.f9group.kz/api/products?category__parent", {
@@ -35,7 +34,6 @@ const App = () => {
 //   useEffect(() => {
 // const filteredData = data.filter(item => item.category.parent === firstFilter)
 //   }, [firstFilter])
-  
 
   return (
     <div className="App">
@@ -51,8 +49,8 @@ const App = () => {
               <Katalog
                 firstFilter={firstFilter}
                 data={data.filter(item => item.category.parent.toLowerCase() === firstFilter)}
-                setfilterCategory={setfilterCategory}
-                filterCategory={filterCategory}
+                // setfilterCategory={setfilterCategory}
+                // filterCategory={filterCategory}
               />
             }
           />
@@ -67,3 +65,4 @@ const App = () => {
 };
 
 export default App;
+

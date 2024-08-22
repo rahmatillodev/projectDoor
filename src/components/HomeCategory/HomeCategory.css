@@ -129,7 +129,7 @@
     padding: 10px;
   }
 }
-@media screen and (max-width: 590px) {
+@media screen and (max-width: 650px) {
   .homeCategory {
     padding: 40px 0px 20px;
   }

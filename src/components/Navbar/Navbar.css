@@ -26,7 +26,7 @@
 .navImage img {
   position: relative;
   z-index: 20;
-  filter: drop-shadow(0px 0px 20px rgb(255,255,255));
+  filter: drop-shadow(0px 0px 20px rgb(255, 255, 255));
 }
 .navImage .bars {
   display: none;
@@ -126,7 +126,6 @@
   box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.1);
 }
 
-
 @media screen and (max-width: 1100px) {
   .nav {
     padding: 0px 10px;
@@ -161,7 +160,7 @@
     opacity: 1;
     top: 0px;
   }
-  .navbarWrapper .nav a  {
+  .navbarWrapper .nav a {
     color: var(--mediaTextColr);
     font-size: 22px;
   }
@@ -170,7 +169,7 @@
     margin: auto;
     justify-content: space-between;
   }
- 
+
   .dropDown svg {
     display: none;
   }
@@ -178,11 +177,13 @@
     flex-direction: column;
     align-items: center;
   }
-  .navLinks .dropDown a ,.navContact span , .navImage .bars {
+  .navLinks .dropDown a,
+  .navContact span,
+  .navImage .bars {
     display: flex;
     font-size: 22px;
   }
-  .navLinks .dropDown .dropDownMenu{
+  .navLinks .dropDown .dropDownMenu {
     display: none;
   }
   .navLinks .dropDownElement {

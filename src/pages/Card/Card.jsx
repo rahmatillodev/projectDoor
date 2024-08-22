@@ -33,12 +33,12 @@ const Card = ({ data }) => {
     });
 
     var requestOptions = {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: raw,
-      redirect: "follow",
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: raw,
+        redirect: "follow",
     };
 
     fetch("https://admin.f9group.kz/api/form", requestOptions)

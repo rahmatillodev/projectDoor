@@ -4,7 +4,8 @@ import { FaRegStar, FaStar } from "react-icons/fa6";
 import { useTranslation } from "react-i18next";
 import { useEffect, useState } from "react";
 
-const Katalog = ({ data, filterCategory, setfilterCategory }) => {
+const Katalog = ({ data }) => {
+  const [filterCategory, setfilterCategory] = useState("классикалык");
   const [t, i18n] = useTranslation("global");
   const buttons = Array.from(
     new Set(data.map((item) => item.category[`name_${i18n.language}`]))
@@ -27,7 +28,7 @@ const Katalog = ({ data, filterCategory, setfilterCategory }) => {
   console.log(filterCategory);
 
 
-  if (buttons == 0) {
+  if (buttons === 0) {
       return <div className="katalog"><h1 className="not">Mahsulot yo'q</h1></div>
     
   }

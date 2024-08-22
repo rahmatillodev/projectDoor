@@ -47,12 +47,13 @@
   height: 250px;
   background: #eee;
 }
-.katalogCards .katalogCard img {
+.katalogCard .katalogCardImage img {
   width: 100%;
   object-fit: contain;
   height: 100%;
   transform: translateY(-50px);
   filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.2));
+  border-radius: 10px 10px 0px 0px;
 }
 .katalogCard .katalogCardText {
   background: white;
@@ -93,14 +94,52 @@
   font-weight: 600;
 }
 @media screen and (max-width: 1100px) {
+  .katalog h1 {
+    font-size: 25px;
+  }
   .katalogCards .katalogCard {
     width: 300px;
   }
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 700px) {
+  .katalogCard .katalogCardImage {
+    border-radius: 10px 10px 0px 0px;
+    height: 160px;
+  }
+  .katalogCard .katalogCardImage img {
+    transform: translateY(-25px);
+  }
+  .katalog .katalogButtons {
+    width: 100%;
+    overflow: scroll;
+  }
+  .katalogCard .katalogCardText {
+    gap: 0px;
+    height: 100%;
+  }
+  .katalogCardText p {
+    font-size: 14px;
+    line-height: 120%;
+  }
+  .katalogCardText h2 {
+    font-size: 18px;
+    line-height: 120%;
+  }
+  .katalogCardText button {
+    font-size: 14px;
+    height: 40px;
+    width: 90%;
+    display: block;
+    margin: 10px auto;
+    font-weight: 600;
+  }
   .katalogCards .katalogCard {
     margin: auto;
-    width: 80%;
+    text-align: center;
+    width: 45%;
+  }
+  .katalogCards .katalogCard img {
+    width: 90%;
   }
   .katalog .katalogButton {
     gap: 5px;
@@ -109,14 +148,18 @@
     padding: 5px 10px;
     font-size: 14px;
   }
-}
-@media screen and (max-width: 500px) {
-  .katalog .katalogButton {
-    width: 95%;
-    padding: 10px 5px;
+  .katalogStars {
+    gap: 5px;
   }
-  .katalogButton button {
-    padding: 2px 5px;
+  .katalogStars svg {
     font-size: 12px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .katalogButton button {
+    font-size: 12px;
+  }
+  .katalogCards .katalogCard {
+    width: 80%;
   }
 }

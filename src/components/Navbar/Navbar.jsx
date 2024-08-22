@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./Navbar.css";
 import { FaBars, FaChevronDown } from "react-icons/fa6";
 import logo from "../../assets/navbarLogo.svg";
@@ -17,6 +17,7 @@ const Navbar = ({setFirstFilter}) => {
   const [mediaModal, setMediaModal] = useState(true)
   const [textlng, setTextlng] = useState("KZ")
   const [flag, setFlag] = useState(FlagKz)
+  const [body, setbody] = useState(false)
 
 
   const changeLanguage = (lng,text,img) => {
@@ -36,7 +37,16 @@ const Navbar = ({setFirstFilter}) => {
 
   const handleLinkClick = () => {
     setMediaModal(true);
+    setbody(false)
   };
+
+  useEffect(() => {
+    if (body) {
+      document.body.classList.add('click');
+    } else {
+      document.body.classList.remove('click');
+    }
+  }, [body]);
 
   return (
     <div className="navbarWrapper">
@@ -45,7 +55,7 @@ const Navbar = ({setFirstFilter}) => {
           <Link to="/" onClick={handleLinkClick}>
             <img src={logo} alt="logo" />
           </Link>
-          {mediaModal && <FaBars className="bars" onClick={()=>setMediaModal(false)} />}
+          {mediaModal && <FaBars className="bars" onClick={()=>{setMediaModal(false); setbody(true)}} />}
         </div>
         <div className={mediaModal ? "navLinks" : "navLinks show"}>
           <div className="dropDown">  
@@ -90,7 +100,7 @@ const Navbar = ({setFirstFilter}) => {
               </div>
             </div>
           </div>
-          <div className="navClose" onClick={handleLinkClick} >
+          <div className="navClose" onClick={()=>{handleLinkClick(); setbody(false) }} >
             <CgClose/>
           </div>
         </div>

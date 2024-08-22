@@ -21,21 +21,21 @@ const Delivery = () => {
             </li>
             <li>
               <img src={check} className="deliveryIcon" alt="deliveryIcon" />
-              {t('deliveryPage.warehouse')}
+              {t("deliveryPage.warehouse")}
             </li>
             <li>
               <img src={check} className="deliveryIcon" alt="deliveryIcon" />
-              {t('deliveryPage.services')}
-                          </li>
+              {t("deliveryPage.services")}
+            </li>
             <li>
               <img src={check} className="deliveryIcon" alt="deliveryIcon" />
-              {t('deliveryPage.time')}
+              {t("deliveryPage.time")}
             </li>
           </ul>
         </div>
       </div>
-      <h4>{t('deliveryPage.trust')}</h4>
-      <h5>{t('deliveryPage.workWithYou')}</h5>
+      <h4>{t("deliveryPage.trust")}</h4>
+      <h5>{t("deliveryPage.workWithYou")}</h5>
     </div>
   );
 };

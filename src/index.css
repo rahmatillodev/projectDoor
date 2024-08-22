@@ -58,6 +58,10 @@ img::selection {
 }
 
 @media screen and (max-width: 1000px) {
+  body.click {
+    height: 100vh;
+    overflow: hidden;
+  }
   .swiper .swiper-button-prev,
   .swiper .swiper-button-next {
     display: none !important;

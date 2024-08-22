@@ -26,7 +26,7 @@ const Header = () => {
       <div className="header">
         <div className="headerLeft" data-aos="fade-right">
           <div className="headerLeftTitle">
-            <h3>Decorate Home</h3>
+            <h3>{t('header.decoration')}</h3>
             <h1>
               <i>
                 {t("header.quality")}

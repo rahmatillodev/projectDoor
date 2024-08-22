@@ -10,7 +10,8 @@
         "pol":"Pol fabrika",
         "stairs":"Zinapoyalar"
     },
-    "header":{
+    "header":{ 
+        "decoration":"Uyni bezash",
         "quality":"premium sifatdagi",
         "mdf":"mdf",
         "doors":"Eshiklar",
