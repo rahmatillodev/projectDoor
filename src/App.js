@@ -16,7 +16,6 @@ const App = () => {
   useEffect(() => {
     Aos.init({ duration: 1000 });
   }, []);
-  const [i18n] = useTranslation("global");
 
   const [data, setData] = useState([]);
 
@@ -48,7 +47,7 @@ const App = () => {
             element={
               <Katalog
                 firstFilter={firstFilter}
-                data={data.filter(item => item.category.parent.toLowerCase() === firstFilter)}
+                data={data.filter(item => firstFilter ? item.category.parent.toLowerCase() === firstFilter : "stair")}
                 // setfilterCategory={setfilterCategory}
                 // filterCategory={filterCategory}
               />

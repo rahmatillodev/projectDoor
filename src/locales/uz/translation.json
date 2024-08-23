@@ -35,15 +35,7 @@
     },
     "contactPage":{
         "contact":"Bog’lanish",
-        "f9":"F9",
-        "f9Group":"group agentligi",
-        "workTime":"Ish vaqti:",
         "workHour":"Dushanbadan-shanbagacha 09:00 dan 18:00 gacha",
-        "phone":"Telefon:",
-        "email":"E-mail:",
-        "car":"Transport:",
-        "busRoute":"131-avtobus, 13-yo`nalishli taksi.",
-        "address":"Manzil:",
         "addressLocation":"Toshkent shahri, Kichik Xalqa Yo`li ko`chasi, G-9a mavzesi, 21-a uy."
     },
     "katalogPage":{

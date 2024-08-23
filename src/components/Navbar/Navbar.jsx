@@ -10,43 +10,37 @@ import { useTranslation } from "react-i18next";
 import { FiPhone } from "react-icons/fi";
 import { CgClose } from "react-icons/cg";
 
-const Navbar = ({setFirstFilter}) => {
-  const [t,i18n] = useTranslation("global");
+const Navbar = ({ setFirstFilter }) => {
+  const [t, i18n] = useTranslation("global");
+  const [scrollPage, setScrollPage] = useState("nav");
+  const [mediaModal, setMediaModal] = useState(true);
+  const [textLng, setTextLng] = useState("KZ");
+  const [flag, setFlag] = useState(FlagKz);
+  const [body, setBody] = useState(false);
 
-  const [scrollPage, setscrollPage] = useState("nav");
-  const [mediaModal, setMediaModal] = useState(true)
-  const [textlng, setTextlng] = useState("KZ")
-  const [flag, setFlag] = useState(FlagKz)
-  const [body, setbody] = useState(false)
-
-
-  const changeLanguage = (lng,text,img) => {
+  const changeLanguage = (lng, text, img) => {
     i18n.changeLanguage(lng);
-    setTextlng(text)
-    setFlag(img)
+    setTextLng(text);
+    setFlag(img);
   };
-  function scrollDown() {
-    if (window.scrollY > 100) {
-      setscrollPage("nav scroll");
-    } else {
-      setscrollPage("nav");
-    }
-  }
 
-  window.addEventListener("scroll", scrollDown);
-
-  const handleLinkClick = () => {
-    setMediaModal(true);
-    setbody(false)
+  const scrollDown = () => {
+    setScrollPage(window.scrollY > 100 ? "nav scroll" : "nav");
   };
 
   useEffect(() => {
-    if (body) {
-      document.body.classList.add('click');
-    } else {
-      document.body.classList.remove('click');
-    }
+    window.addEventListener("scroll", scrollDown);
+    return () => window.removeEventListener("scroll", scrollDown);
+  }, []);
+
+  useEffect(() => {
+    document.body.classList.toggle('click', body);
   }, [body]);
+
+  const handleLinkClick = () => {
+    setMediaModal(true);
+    setBody(false);
+  };
 
   return (
     <div className="navbarWrapper">
@@ -55,10 +49,10 @@ const Navbar = ({setFirstFilter}) => {
           <Link to="/" onClick={handleLinkClick}>
             <img src={logo} alt="logo" />
           </Link>
-          {mediaModal && <FaBars className="bars" onClick={()=>{setMediaModal(false); setbody(true)}} />}
+          {mediaModal && <FaBars className="bars" onClick={() => { setMediaModal(false); setBody(true); }} />}
         </div>
         <div className={mediaModal ? "navLinks" : "navLinks show"}>
-          <div className="dropDown">  
+          <div className="dropDown">
             <NavLink className="dropDownMenu">
               {t("navbar.katalog")} <FaChevronDown />
             </NavLink>
@@ -82,8 +76,8 @@ const Navbar = ({setFirstFilter}) => {
           </div>
           <div className="languages">
             <div className="nowFlag">
-            <img src={flag} alt="language" />
-            <span>{textlng}</span>
+              <img src={flag} alt="language" />
+              <span>{textLng}</span>
             </div>
             <div className="another">
               <div className="language" onClick={() => {changeLanguage("kz","KZ",FlagKz); handleLinkClick();}} >
@@ -100,7 +94,7 @@ const Navbar = ({setFirstFilter}) => {
               </div>
             </div>
           </div>
-          <div className="navClose" onClick={()=>{handleLinkClick(); setbody(false) }} >
+          <div className="navClose" onClick={()=>{handleLinkClick(); setBody(false) }} >
             <CgClose/>
           </div>
         </div>

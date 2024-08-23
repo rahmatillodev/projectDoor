@@ -29,7 +29,7 @@
   color: var(--color);
 }
 .contactLeftText {
-  padding-right: 10px;
+  padding-right: 50px;
 }
 .contactLeftText img {
   width: 40px;
@@ -39,7 +39,7 @@
 .contactLeftText h3 {
   font-size: 17px;
   font-weight: 500;
-  line-height: 24px;
+  line-height: 120%;
 }
 .contactLeftText > div {
   display: flex;
