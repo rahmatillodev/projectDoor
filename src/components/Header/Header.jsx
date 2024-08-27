@@ -2,8 +2,8 @@ import "./Header.css";
 import icon1 from "../../assets/icon1.svg";
 import icon2 from "../../assets/icon2.svg";
 import icon3 from "../../assets/icon3.svg";
-import header1 from "../../assets/headerCarousel1.jpg"
-import header2 from "../../assets/headerCarousel2.jpg"
+import header1 from "../../assets/Group 48095459.png"
+// import header2 from "../../assets/headerCarousel2.jpg"
 import header3 from "../../assets/headerCarousel3.png"
 import { useTranslation } from "react-i18next";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -64,13 +64,13 @@ const Header = () => {
             }}
             modules={[EffectFade, Autoplay]}
           >
-            <SwiperSlide>
+            <SwiperSlide  >
               <img src={header1} alt={header1} />
             </SwiperSlide>
-            <SwiperSlide>
+            {/* <SwiperSlide>
               <img src={header2} alt={header2} />
-            </SwiperSlide>
-            <SwiperSlide>
+            </SwiperSlide> */}
+            <SwiperSlide className="headerCarousel1">
               <img src={header3} alt={header3} />
             </SwiperSlide>
           </Swiper>
