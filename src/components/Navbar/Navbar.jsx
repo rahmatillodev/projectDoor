@@ -72,7 +72,7 @@ const Navbar = ({ setFirstFilter }) => {
             <span>
               <FiPhone />
             </span>
-            <a href="tel:+998900108510">+998 90 010-85-10</a>
+            <a href="tel:+998900108510">+77009000909</a>
           </div>
           <div className="languages">
             <div className="nowFlag">

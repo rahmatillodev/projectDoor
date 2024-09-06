@@ -134,9 +134,17 @@
     },
     "design":{
         "advantage":"Yana bir ustunlik jihatimiz",
-        "control":"7 bosqichli sifat nazoratidan o’tkazamiz",
+        "control":"Sifat nazorati ostida ishlab chiqarish bosqichlari",
         "stage":"Bosqich",
-        "response":"Eng yaxshi xizmatni taqdim etamiz va juda tez javob beramiz."
+        "response1":"Zavodga maxsus yog’ochlar keltiriladi",
+        "response2":"Uskunalar yordamida yog’ochlarga kerakli shakil beriladi",
+        "response3":"Yog’och takribidagi suvlar to’liq chiqib ketgunigacha quritish boshqichida bo’ladi",
+        "response4":"Yog’ochlardagi dag’laliknin ketkazib silliq holatga o’tkazish uchun jilvirlash va randalash jarayoni",
+        "response5":"Mustakamlikni oshirish maqsadida yog’ochlar masus klay yordamida qotiriladi",
+        "response6":"Avtomatlashgan kampyuter dastgoh yordamida yog’ochdan kerakli shakilni chiqarib olinadi",
+        "response7":"Bu bosqichda Guruntofka, bo’yoq, patinalanadi",
+        "response8":"Laklash bosqichi",
+        "response9":"Mijozga yetkazib berish va o’rnatish bosqichi."
     },
     "modal":{
         "form":"Batafsil ma'lumot olish uchun formani to'ldiring",

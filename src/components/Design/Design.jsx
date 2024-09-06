@@ -37,7 +37,7 @@ const Design = () => {
               <div className="number">2</div>
               <div>
                 <h2>{t("design.stage")}</h2>
-                <p>{t("design.response")}</p>
+                <p>{t("design.response2")}</p>
               </div>
             </div>
 
@@ -45,7 +45,7 @@ const Design = () => {
               <div className="number">1</div>
               <div>
                 <h2>{t("design.stage")}</h2>
-                <p>{t("design.response")}</p>
+                <p>{t("design.response1")}</p>
               </div>
             </div>
 
@@ -53,11 +53,12 @@ const Design = () => {
               <div className="number">3</div>
               <div>
                 <h2>{t("design.stage")}</h2>
-                <p>{t("design.response")}</p>
+                <p>{t("design.response3")}</p>
               </div>
             </div>
           </div>
         </SwiperSlide>
+
         <SwiperSlide>
           <div
             className="designImage"
@@ -66,30 +67,31 @@ const Design = () => {
             data-aos-delay="800"
           >
             <div className="designCard designCard2">
-              <div className="number">2</div>
+              <div className="number">5</div>
               <div>
                 <h2>{t("design.stage")}</h2>
-                <p>{t("design.response")}</p>
+                <p>{t("design.response5")}</p>
               </div>
             </div>
 
             <div className="designCard designCard1">
-              <div className="number">1</div>
+              <div className="number">4</div>
               <div>
                 <h2>{t("design.stage")}</h2>
-                <p>{t("design.response")}</p>
+                <p>{t("design.response4")}</p>
               </div>
             </div>
 
             <div className="designCard designCard3">
-              <div className="number">3</div>
+              <div className="number">6</div>
               <div>
                 <h2>{t("design.stage")}</h2>
-                <p>{t("design.response")}</p>
+                <p>{t("design.response6")}</p>
               </div>
             </div>
           </div>
         </SwiperSlide>
+
         <SwiperSlide>
           <div
             className="designImage"
@@ -98,26 +100,26 @@ const Design = () => {
             data-aos-delay="800"
           >
             <div className="designCard designCard2">
-              <div className="number">2</div>
+              <div className="number">8</div>
               <div>
                 <h2>{t("design.stage")}</h2>
-                <p>{t("design.response")}</p>
+                <p>{t("design.response8")}</p>
               </div>
             </div>
 
             <div className="designCard designCard1">
-              <div className="number">1</div>
+              <div className="number">7</div>
               <div>
                 <h2>{t("design.stage")}</h2>
-                <p>{t("design.response")}</p>
+                <p>{t("design.response7")}</p>
               </div>
             </div>
 
             <div className="designCard designCard3">
-              <div className="number">3</div>
+              <div className="number">9</div>
               <div>
                 <h2>{t("design.stage")}</h2>
-                <p>{t("design.response")}</p>
+                <p>{t("design.response9")}</p>
               </div>
             </div>
           </div>
