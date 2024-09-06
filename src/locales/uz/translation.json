@@ -21,7 +21,8 @@
         "order":"Buyurtma berish"
     },
     "payPage":{
-        "pay":"To'lov"
+        "pay":"To'lov",
+        "desc":"Hisob raqamiga o'tkazma"
     },
     "deliveryPage":{
         "delivery":"Yetkazib berish va o’rnatish",
@@ -103,7 +104,11 @@
     },
     "testimonial":{
         "testimonialTitle":"fikrlar",
-        "testimonialDesc":"Mijozlarimizning Fikrlari"
+        "testimonialDesc":"Mijozlarimizning Fikrlari",
+        "descFirst":"F9 group dam mamnunman 15 yillik tarjriba ni o’z ishlarida ko’rsatib bera olar ekan",
+        "descSecond":"Ish sifati juda yuqiri tanlov keng servis juda yaxshi",
+        "descThird":"F9grop kampanyasini tanlab hato qilmaganimga amin bo’ldim. F9 group to’g’ri tanlov.",
+        "descFour":"Manga ko’rsatilgan hizmatdan va sifatli maxsulotlarda juda mamnunman eng muhumi 5 yillik kafolat"
     },
     "service":{
         "selection":"Tanlovda adashsangiz quyidagi",

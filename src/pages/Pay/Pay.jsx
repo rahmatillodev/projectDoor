@@ -1,8 +1,8 @@
 import { useTranslation } from "react-i18next"
 import "./Pay.css"
-import money from "../../assets/naqt.webp"
-import click from "../../assets/click.jpg"
-import payme from "../../assets/payme.jpg"
+import pay1 from "../../assets/pay1.jpg"
+import pay2 from "../../assets/pay2.png"
+import payme from "../../assets/otkazma.png"
 const Pay = () => {
   const [t] = useTranslation("global");
   return (
@@ -10,13 +10,14 @@ const Pay = () => {
       <h1>{t("payPage.pay")}</h1>
       <div className="payCards">
         <div className="payCard">
-          <img src={money} alt="money" />
+          <img src={pay1} alt="money" />
         </div>
         <div className="payCard">
-          <img src={click} alt="click" />
+          <img src={pay2} alt="pay2" />
         </div>
-        <div className="payCard">
+        <div className="payCard payCard3">
           <img src={payme} alt="payme" />
+          <h5>{t('payPage.desc')}</h5>
         </div>
       </div>
     </div>

@@ -1,6 +1,9 @@
 import "./Testimonial.css";
 import img from "../../assets/testimonialImg.png";
-import image from "../../assets/testimonialImage.png";
+import image1 from "../../assets/testimonialBg1.jpg";
+import image2 from "../../assets/testimonialBg2.jpg";
+import image3 from "../../assets/testimonialBg3.jpg";
+import image4 from "../../assets/testimonialBg4.jpg";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -14,40 +17,30 @@ const Testimonial = () => {
 
   let array = [
     {
-      bgImg: image,
+      bgImg: image1,
       img: img,
-      title: "Abror Ahmedov",
-      desc: "Terimakasih banyak, kini ruanganku menjadi lebih mewah dan terlihat maha",
-      who: "Shifokor",
+      title: "Alixan",
+      desc: t('testimonial.descFirst'),
     },
     {
-      bgImg: image,
+      bgImg: image2,
       img: img,
-      title: "Abror Ahmedov",
-      desc: "Terimakasih banyak, kini ruanganku menjadi lebih mewah dan terlihat mahal",
-      who: "Shifokor",
+      title: "Arsen",
+      desc: t('testimonial.descSecond'),
     },
     {
-      bgImg: image,
+      bgImg: image3,
       img: img,
-      title: "Abror Ahmedov",
-      desc: "Terimakasih banyak, kini ruanganku menjadi lebih mewah dan terlihat mahal",
-      who: "Shifokor",
+      title: "Ramazon",
+      desc: t('testimonial.descThird'),
     },
     {
-      bgImg: image,
+      bgImg: image4,
       img: img,
-      title: "Abror Ahmedov",
-      desc: "Terimakasih banyak, kini ruanganku menjadi lebih mewah dan terlihat mahal",
-      who: "Shifokor",
+      title: "Ayzada",
+      desc: t('testimonial.descFour'),
     },
-    {
-      bgImg: image,
-      img: img,
-      title: "Abror Ahmedov",
-      desc: "Terimakasih banyak, kini ruanganku menjadi lebih mewah dan terlihat mahal",
-      who: "Shifokor",
-    },
+   
   ];
   return (
     <div className="testimonial">
@@ -89,14 +82,13 @@ const Testimonial = () => {
                 <img src={element.img} alt="Profile" />
               </div>
               <h3>{element.title}</h3>
-              <span>{element.who}</span>
               <p>{element.desc}</p>
               <div className="testimonialStars">
                 <FaStar />
                 <FaStar />
                 <FaStar />
                 <FaStar />
-                <FaRegStar />
+                <FaStar />
               </div>
             </div>
           </SwiperSlide>

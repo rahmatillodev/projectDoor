@@ -21,6 +21,16 @@
   height: 100%;
   object-fit: contain;
 }
+.pay img:first-child{
+  transform: scale(0.8);
+}
+.pay .payCard3 {
+  display: flex;
+  align-items: center;
+}
+.pay .payCard3 img{
+  width: 50%;
+}
 @media screen and (max-width: 1024px) {
   .pay .payCards {
     flex-direction: column;
