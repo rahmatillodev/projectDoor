@@ -3,6 +3,7 @@ import logo from "../../assets/logo.svg";
 import { FaFacebook } from "react-icons/fa6";
 import { BsInstagram, BsTwitter } from "react-icons/bs";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 const Footer = () => {
   const [t] = useTranslation("global");
 
@@ -14,10 +15,10 @@ const Footer = () => {
           <p>{t("footer.aboutProduct")}</p>
         </div>
         <div>
-          <a href="#">{t("footer.home")}</a>
-          <a href="#">{t("footer.delivery")}</a>
-          <a href="#">{t("footer.pay")}</a>
-          <a href="#">{t("footer.contactus")}</a>
+          <Link to="/">{t("footer.home")}</Link>
+          <Link to="/delivery">{t("footer.delivery")}</Link>
+          <Link to="/pay">{t("footer.pay")}</Link>
+          <Link to="/contact">{t("footer.contactus")}</Link>
         </div>
         <div>
           <a href="">{t("footer.katalog")}</a>
@@ -34,7 +35,7 @@ const Footer = () => {
           <a href="">
             <BsTwitter /> {t("footer.twitter")}
           </a>
-          <a href="">
+          <a href="https://www.instagram.com/f9.kaz/" target="_blank">
             <BsInstagram /> {t("footer.instagram")}
           </a>
         </div>

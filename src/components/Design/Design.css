@@ -66,15 +66,15 @@
   line-height: 19px;
 }
 .designImage .designCard2 {
-  align-self: flex-end;
-  transform: translate(-30px, -50px);
+  align-self: center;
+  /* transform: translate(-30px, -50px); */
 }
 .designImage .designCard1 {
-  transform: translate(-55px, -120px);
+  transform: translate(-40px, -40px);
 }
 .designImage .designCard3 {
   align-self: flex-end;
-  transform: translate(70px, 70px);
+  transform: translate(40px, 40px);
 }
 .design .dots {
     z-index: -1;
