@@ -84,8 +84,9 @@ const HomeCategory = () => {
                     <FaStar />
                     <FaStar />
                     <FaStar />
-                    <FaRegStar />
-                    <FaRegStar />
+                    <FaStar />
+                    <FaStar />
+                    
                   </div>
                   <Link className="button" to={`/catalog/${item.id}`}>{t('homeCategory.detail')}</Link>
                 </div>

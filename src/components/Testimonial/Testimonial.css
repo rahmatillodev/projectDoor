@@ -38,16 +38,19 @@
   height: 50%;
   background: white;
   border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.testimonialCardText .testimonialCardImage img {
+/* .testimonialCardText .testimonialCardImage img {
   height: 100%;
   width: 100%;
   object-fit: cover;
   border: 10px solid white;
   border-radius: 50%;
-}
-.testimonialCardText .testimonialCardImage {
-  /* transform: translateY(-30px); */
+} */
+/* .testimonialCardText .testimonialCardImage {
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
   width: 70px;
@@ -55,7 +58,7 @@
   height: 70px;
   margin: 0px auto;
   margin-top: -30px;
-}
+} */
 .testimonialCardText h3 {
   padding: 10px 0px;
   font-size: 18px;

@@ -1,7 +1,7 @@
 import "./Footer.css";
 import logo from "../../assets/logo.svg";
 import { FaFacebook } from "react-icons/fa6";
-import { BsInstagram, BsTwitter } from "react-icons/bs";
+import { BsInstagram, BsTelegram, BsTwitter } from "react-icons/bs";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 const Footer = () => {
@@ -21,19 +21,19 @@ const Footer = () => {
           <Link to="/contact">{t("footer.contactus")}</Link>
         </div>
         <div>
-          <a href="">{t("footer.katalog")}</a>
-          <a href="">{t("footer.doors")}</a>
-          <a href="">{t("footer.tables")}</a>
-          <a href="">{t("footer.stairs")}</a>
-          <a href="">{t("footer.cauldrons")}</a>
+          <a href="#">{t("footer.katalog")}</a>
+          <a href="#">{t("footer.doors")}</a>
+          <a href="#">{t("footer.tables")}</a>
+          <a href="#">{t("footer.stairs")}</a>
+          <a href="#">{t("footer.cauldrons")}</a>
         </div>
         <div>
           <a href="">{t("footer.media")}</a>
-          <a href="">
+          <a href="https://www.instagram.com/f9.kaz/" target="_blank">
             <FaFacebook /> {t("footer.facebook")}
           </a>
-          <a href="">
-            <BsTwitter /> {t("footer.twitter")}
+          <a href="https://t.me/f9_kz" target="_blank">
+            <BsTelegram /> {t("footer.telegram")}
           </a>
           <a href="https://www.instagram.com/f9.kaz/" target="_blank">
             <BsInstagram /> {t("footer.instagram")}

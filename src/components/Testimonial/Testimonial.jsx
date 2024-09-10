@@ -78,9 +78,9 @@ const Testimonial = () => {
             style={{ background: `center/cover url(${element.bgImg})` }}
           >
             <div className="testimonialCardText">
-              <div className="testimonialCardImage">
+              {/* <div className="testimonialCardImage">
                 <img src={element.img} alt="Profile" />
-              </div>
+              </div> */}
               <h3>{element.title}</h3>
               <p>{element.desc}</p>
               <div className="testimonialStars">
