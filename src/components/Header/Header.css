@@ -126,6 +126,7 @@ header {
   .header::after {
     display: none;
   }
+  
   header {
     padding: 60px 0px 50px;
   }
@@ -138,7 +139,7 @@ header {
   }
   .headerLeftTitle h1,
   .headerLeftTitle p {
-    font-size: 35px;
+    font-size: 30px;
   }
   .header .button {
     margin-top: 20px;
@@ -150,5 +151,11 @@ header {
   }
   .aboutText p {
     font-size: 14px;
+  }
+}
+@media screen and (max-width:400px) {
+  .headerLeftTitle h1,
+  .headerLeftTitle p {
+    font-size: 20px;
   }
 }
