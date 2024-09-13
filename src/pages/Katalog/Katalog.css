@@ -129,6 +129,7 @@
     width: 90%;
     display: block;
     margin: 10px auto;
+    padding: 10px 0px;
     font-weight: 600;
   }
   .katalogCards .katalogCard {
@@ -149,6 +150,7 @@
   .katalogStars {
     gap: 5px;
   }
+  
   .katalogStars svg {
     font-size: 12px;
   }
